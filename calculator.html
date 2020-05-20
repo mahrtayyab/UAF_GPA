@@ -1,56 +1,77 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>GPA Calculator</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <script src="script.js">
     </script>
   </head>
   <body>
+    <div id="twig-top" style="width: 100%; position: absolute; top: 0px; text-align: center; z-index: 99; line-height: 25px; background-color: rgb(208, 10, 45); color: white;">
+      <h6>Version 2 is up ,Now you can calculate courses with 20,40 & 60 marks.</h6>
+    </div>
     <div class="container">
       <div class="jumbotron">
         <div class="text-center">
           <h1>UAF GPA Calculator</h1>
-          <img src="Official_logo_transparent.gif" alt="logo" class="img-thumbnail" width="250" height="220">
         </div>
+      </div>
+      <div class="text-center">
+        <img src="Official_logo_transparent.gif" alt="logo" class="img-thumbnail" width="250" height="220">
       </div>
       <h2>Enter Your Marks:</h2>
       <form>
         <div class="form-row">
           <div class="form-group col-md-6">
-          <label for="subject1">Marks of Subject 1</label>
-          <input type="number" class="form-control" id="subject1">
+            <!-- <div class="form-check form-check-inline"> -->
+          <label for="subject1t">Marks of Subject 1</label>
+          <input type="number" class="form-control" id="subject1t" placeholder="Total Marks">
+          <label for="subject1o"></label>
+          <input type="number" class="form-control" id="subject1o" placeholder="Obtained Marks">
           </div>
         </div>
         <div class="form-group col-md-6">
-          <label for="subject2">Marks of Subject 2</label>
-          <input type="number" class="form-control" id="subject2">
+          <!-- <div class="form-check form-check-inline"> -->
+          <label for="subject2t">Marks of Subject 2</label>
+          <input type="number" class="form-control" id="subject2t" placeholder="Total Marks">
+          <label for="subject2o"></label>
+          <input type="number" class="form-control" id="subject2o" placeholder="Obtained Marks">
         </div>
         <div class="form-group col-md-6">
-          <label for="subject3">Marks in Subject 3</label>
-          <input type="number" class="form-control" id="subject3">
+          <!-- <div class="form-check form-check-inline"> -->
+          <label for="subject3t">Marks in Subject 3</label>
+          <input type="number" class="form-control" id="subject3t" placeholder="Total Marks">
+          <label for="subject3o"></label>
+          <input type="number" class="form-control" id="subject3o" placeholder="Obtained Marks">
         </div>
         <div class="form-group col-md-6">
-          <label for="subject4">Marks in Subject 4</label>
-          <input type="number" class="form-control" id="subject4">
+          <!-- <div class="form-check form-check-inline"> -->
+          <label for="subject4t">Marks in Subject 4</label>
+          <input type="number" class="form-control" id="subject4t" placeholder="Total Marks">
+          <label for="subject4o"></label>
+          <input type="number" class="form-control" id="subject4o" placeholder="Obtained Marks">
         </div>
         <div class="form-group col-md-6">
-          <label for="subject5">Marks in Subject 5</label>
-          <input type="number" class="form-control" id="subject5">
+          <label for="subject5t">Marks in Subject 5</label>
+          <input type="number" class="form-control" id="subject5t" placeholder="Total Marks">
+          <label for="subject5o"></label>
+          <input type="number" class="form-control" id="subject5o" placeholder="Obtained Marks">
         </div>
         <div class="form-group col-md-6">
-          <label for="subject6">Marks in Subject 6</label>
-          <input type="number" class="form-control" id="subject6">
+          <label for="subject6t">Marks in Subject 6</label>
+          <input type="number" class="form-control" id="subject6t" placeholder="Total Marks">
+          <label for="subject6o"></label>
+          <input type="number" class="form-control" id="subject6o" placeholder="Obtained Marks">
         </div>
         <div class="form-group col-md-6">
           <label for="crehrs">Number Of Credit Hours</label>
           <input type="number" class="form-control" id="crehrs">
         </div>
         <div class="text-center">
-        <button type="button" class="btn btn-primary" name="Calculator" onclick="GPA()">Calculate</button>
+        <button type="button" class="btn btn-primary" name="Calculator" onclick="GPA60()">Calculate</button>
         </div>
       </form>
       <div class="text-center">
@@ -61,3 +82,4 @@
     </div>
   </body>
 </html>
+
