@@ -1,7 +1,12 @@
 # UAF_GPA
 Calculate your GPA (for students of University Of Agriculture Faisalabad)
 # ChangeLogs:
- Version Alpha :Currently version aplha only supports calculation for the subjects/course having total marks of 60.
+ Version Alpha :
+               <br>
+               <ol>
+               <li>Currently version aplha only supports calculation for the subjects/course having total marks of 60.</li>
+               </ol>
+               </br>
  <p>Version 2 : 
                 <br>
                 <ol> 
