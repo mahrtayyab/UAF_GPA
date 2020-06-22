@@ -1,51 +1,11 @@
-.
-li
-{
-  list-style-type: none;
-  margin-left: 1vw;
-}
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 
-li:first-child
-{
-  margin:0;
-}
 
-footer
-{
-  padding-top: 5vh;
-  padding-bottom: 2vh;
-  background-color: lightgray;
-}
-
-.content
-{
-  background-color: lightgray;
+#active{
+    border-bottom: 1px solid white;
 }
 
 
-
-.copyright,  .impressum
-{
-  text-align: center;
-  height: 6vh;
-  font-size: 20px;
-}
-
-.logo
-{
-  height: 8vh;
-}
-
-@media (max-width: 768px)
-{
-  li
-  {
-    margin-left: 0;
-    margin-bottom: 1vh;
-  }
-
-  .sozial
-  {
-    margin-bottom: 1vh;
-  }
+#hero{
+    font-family: 'Carter One', cursive;
 }
