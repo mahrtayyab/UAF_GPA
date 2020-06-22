@@ -1,123 +1,146 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-    <title>GPA Calculator</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <script src="script.js">
-    </script>
-  </head>
-  <body>
-    <div id="twig-top" style="width: 100%; position: absolute; top: 0px; text-align: center; z-index: 99; line-height: 25px; background-color: rgb(208, 10, 45); color: white;">
-      <h6>Version 2 is up ,Now you can calculate courses with 20,40 & 60 marks.</h6>
-    </div>
-    <div class="container">
-      <div class="jumbotron">
-        <div class="text-center">
-          <h1>UAF GPA Calculator</h1>
-        </div>
-      </div>
-      <div class="text-center">
-        <img src="Official_logo_transparent.gif" alt="logo" class="img-thumbnail" width="250" height="220">
-      </div>
-      <h2>Enter Your Marks:</h2>
-      <form>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <!-- <div class="form-check form-check-inline"> -->
-          <label for="subject1t">Marks of Subject 1</label>
-          <input type="number" class="form-control" id="subject1t" placeholder="Total Marks">
-          <label for="subject1o"></label>
-          <input type="number" class="form-control" id="subject1o" placeholder="Obtained Marks">
+<html>
+    <head>
+        <title>UAF GPA Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Expires" content="0">
+        <meta name="author" content="Tayyab Kharl">
+        <meta name="description" content="GPA calculator for UAF students">
+        <link rel="stylesheet" href="style.css?v=5.0">
+        <script src="script.js"></script>
+        <link href="tailwind.min.css" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header class="text-gray-500 bg-gray-900 body-font">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+              <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+                <svg width="46" height="45" viewBox="0 0 46 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="23.5" cy="22.5" r="22.5" fill="#658CC8"/>
+                    <path d="M30.4161 14.008V17.776H25.8321V31H21.1281V17.776H16.5921V14.008H30.4161Z" fill="white"/>
+                    </svg>                                                       
+                <span class="ml-3 text-xl">Tayyab</span>
+              </a>
+              <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+                <a href="/index.html" class="mr-5 hover:text-white">Home</a>
+                <a href="#" class="mr-5 hover:text-white" id="active">GPA Calculator</a>
+                <a href="/contact/contact.html" class="mr-5 hover:text-white">Get in Touch</a>
+                <a href="#" class="mr-5 hover:text-white">About</a>
+              </nav>
+              <button class="inline-flex items-center bg-red-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
+                  <a href="http://covid.gov.pk" target="_blank">
+                    COVID-19
+                </a>
+              </button>
+            </div>
+          </header>
+          <div class="bg-indigo-900 text-center py-4 lg:px-4">
+            <div class="p-2 bg-indigo-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
+              <span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">New</span>
+              <span class="font-semibold mr-2 text-left flex-auto">Version 2 is up, you can now calculate GPA of subject/courses having 20, 40 & 60 marks.</span>
+              <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+            </div>
           </div>
+          <section class="text-gray-500 bg-gray-900 body-font relative">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-12">
+      <span class="sm:text-4xl text-3xl font-medium title-font mb-4 text-white" id="title">UAF GPA Calculator</span>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base" id="sub">Calculate your Grade Point Average.</p>
+    </div>
+    <div class="lg:w-1/2 md:w-2/3 mx-auto">
+      <div class="flex flex-wrap -m-2">
+        <div class="p-2 w-1/2">
+          <label for="subject1t">Marks of Subject 1</label>
+          <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject1t" placeholder="Total Marks" type="number">
+          <label for="subject1o"></label>
+          <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject1o" placeholder="Obtained Marks" type="number">
         </div>
-        <div class="form-group col-md-6">
-          <!-- <div class="form-check form-check-inline"> -->
+        <div class="p-2 w-1/2">
           <label for="subject2t">Marks of Subject 2</label>
-          <input type="number" class="form-control" id="subject2t" placeholder="Total Marks">
+          <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject2t" placeholder="Total Marks" type="number">
           <label for="subject2o"></label>
-          <input type="number" class="form-control" id="subject2o" placeholder="Obtained Marks">
+          <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject2o" placeholder="Obtained Marks" type="number">
         </div>
-        <div class="form-group col-md-6">
-          <!-- <div class="form-check form-check-inline"> -->
-          <label for="subject3t">Marks in Subject 3</label>
-          <input type="number" class="form-control" id="subject3t" placeholder="Total Marks">
-          <label for="subject3o"></label>
-          <input type="number" class="form-control" id="subject3o" placeholder="Obtained Marks">
+        <div class="p-2 w-1/2">
+            <label for="subject3t">Marks of Subject 3</label>
+            <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject3t" placeholder="Total Marks" type="number">
+            <label for="subject3o"></label>
+            <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject3o" placeholder="Obtained Marks" type="number">
         </div>
-        <div class="form-group col-md-6">
-          <!-- <div class="form-check form-check-inline"> -->
-          <label for="subject4t">Marks in Subject 4</label>
-          <input type="number" class="form-control" id="subject4t" placeholder="Total Marks">
-          <label for="subject4o"></label>
-          <input type="number" class="form-control" id="subject4o" placeholder="Obtained Marks">
+        <div class="p-2 w-1/2">
+            <label for="subject4t">Marks of Subject 4</label>
+            <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject4t" placeholder="Total Marks" type="number">
+            <label for="subject4o"></label>
+            <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject4o" placeholder="Obtained Marks" type="number">
         </div>
-        <div class="form-group col-md-6">
-          <label for="subject5t">Marks in Subject 5</label>
-          <input type="number" class="form-control" id="subject5t" placeholder="Total Marks">
-          <label for="subject5o"></label>
-          <input type="number" class="form-control" id="subject5o" placeholder="Obtained Marks">
+        <div class="p-2 w-1/2">
+            <label for="subject5t">Marks of Subject 5</label>
+            <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject5t" placeholder="Total Marks" type="number">
+            <label for="subject5o"></label>
+            <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject5o" placeholder="Obtained Marks" type="number">
         </div>
-        <div class="form-group col-md-6">
-          <label for="subject6t">Marks in Subject 6</label>
-          <input type="number" class="form-control" id="subject6t" placeholder="Total Marks">
-          <label for="subject6o"></label>
-          <input type="number" class="form-control" id="subject6o" placeholder="Obtained Marks">
+        <div class="p-2 w-1/2">
+            <label for="subject6t">Marks of Subject 6</label>
+            <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject6t"placeholder="Total Marks" type="number">
+            <label for="subject6o"></label>
+            <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject6o" placeholder="Obtained Marks" type="number">
         </div>
-        <div class="form-group col-md-6">
-          <label for="crehrs">Number Of Credit Hours</label>
-          <input type="number" class="form-control" id="crehrs">
+        <div class="p-2 w-1/2">
+            <label for="crehrs">Number of Credit Hours</label>
+            <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="crehrs" placeholder="Credit Hours" type="number">
         </div>
-        <div class="text-center">
-        <button type="button" class="btn btn-primary" name="Calculator" onclick="GPA60()">Calculate</button>
+        <!--<div class="p-2 w-full">
+          <textarea class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none h-48 focus:border-indigo-500 text-base px-4 py-2 resize-none block" placeholder="Message"></textarea>
+        </div>-->
+        <div class="p-2 w-full">
+          <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" type="button" onclick="GPA60()">Calculate</button>
         </div>
-      </form>
-      <div class="text-center">
-        <br>
-          <h1 id="r">Your GPA is:</h1>
-        </br>
+        <div class="flex flex-col text-center w-full mb-2">
+        <h1 class="sm:text-4xl text-3xl font-medium title-font mb-4 text-white" id="r" >Your GPA is:</h1>
+        </div>
+        <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
+        </div>
       </div>
     </div>
-  <div class="container">
-  <div class="content"></div>
-  <footer class="row">
-    <div class="sozial col-xs-12 col-sm-6 col-sm-push-6">
-      <ul class="row">
-        <li class="col-xs-6 col-sm-2">
-          <a href="http://facebook.com/mahrtayyabhero" target="_blank">
-            <img class="logo" src="https://cdn1.iconfinder.com/data/icons/social-networks-3/512/facebook-512.png">
-          </a>
-        </li>
-        <li class="col-xs-6 col-sm-2">
-          <a href="http://t.me/kharltayyab" target="_blank">
-            <img class="logo" src="https://cdn3.iconfinder.com/data/icons/social-network-30/512/social-07-512.png">
-          </a>
-        </li>
-        <li class="col-xs-6 col-sm-2">
-          <a href="http://instagram.com/tayyab.kharl" target="_blank">
-            <img class="logo" src="https://cdn4.iconfinder.com/data/icons/social-media-2210/24/Instagram-512.png">
-          </a>
-        </li>
-        <li class="col-xs-6 col-sm-2">
-          <a href="http://github.com/mahrtayyab" target="_blank">
-            <img class="logo" src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Github-512.png">
-          </a>
-        </li>
-        <li class="col-xs-6 col-sm-2">
-          <a href="http://twitter.com/kharltayyab" target="_blank">
-            <img class="logo" src="https://cdn1.iconfinder.com/data/icons/social-networks-3/512/twitter-512.png">
-          </a>
-        </li>
-      </ul>
-    </div><!-- Ende Sozial media -->
-
-    <div class="copyright col-xs-12 col-sm-3 col-sm-pull-6">
-      <p> &copy; Copyright 2000-2020</p>
-    </div><!-- Ende Copyright -->
-  </footer>
   </div>
-  </body>
+</section>
+          <footer class="text-gray-500 bg-gray-900 body-font">
+            <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+              <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                <svg width="187" height="30" viewBox="0 0 187 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.264 19.76L0.744 14.336L6.264 8.864H9.72L4.176 14.336L9.72 19.76H6.264ZM19.6211 0.343998L13.0931 27.224H10.4291L16.9571 0.343998H19.6211ZM32.0754 6.056V8.264H27.3474V23H24.5874V8.264H19.8834V6.056H32.0754ZM39.4209 9.608C40.6209 9.608 41.6449 9.904 42.4929 10.496C43.3409 11.088 43.9409 11.872 44.2929 12.848V9.776H47.0289V23H44.2929V19.928C43.9409 20.904 43.3409 21.688 42.4929 22.28C41.6449 22.872 40.6209 23.168 39.4209 23.168C38.2689 23.168 37.2369 22.896 36.3249 22.352C35.4289 21.808 34.7249 21.024 34.2129 20C33.7009 18.976 33.4449 17.768 33.4449 16.376C33.4449 15 33.7009 13.8 34.2129 12.776C34.7249 11.752 35.4289 10.968 36.3249 10.424C37.2369 9.88 38.2689 9.608 39.4209 9.608ZM40.2609 12.008C39.0449 12.008 38.0689 12.4 37.3329 13.184C36.6129 13.952 36.2529 15.016 36.2529 16.376C36.2529 17.736 36.6129 18.808 37.3329 19.592C38.0689 20.36 39.0449 20.744 40.2609 20.744C41.0289 20.744 41.7169 20.568 42.3249 20.216C42.9329 19.848 43.4129 19.336 43.7649 18.68C44.1169 18.024 44.2929 17.256 44.2929 16.376C44.2929 15.512 44.1169 14.752 43.7649 14.096C43.4129 13.424 42.9329 12.912 42.3249 12.56C41.7169 12.192 41.0289 12.008 40.2609 12.008ZM51.8723 9.776L55.8323 19.496L59.5043 9.776H62.5523L54.5603 29.288H51.5123L54.3683 22.688L48.8003 9.776H51.8723ZM65.9113 9.776L69.8713 19.496L73.5433 9.776H76.5913L68.5993 29.288H65.5513L68.4073 22.688L62.8393 9.776H65.9113ZM83.6944 9.608C84.8944 9.608 85.9184 9.904 86.7664 10.496C87.6144 11.088 88.2144 11.872 88.5664 12.848V9.776H91.3024V23H88.5664V19.928C88.2144 20.904 87.6144 21.688 86.7664 22.28C85.9184 22.872 84.8944 23.168 83.6944 23.168C82.5424 23.168 81.5104 22.896 80.5984 22.352C79.7024 21.808 78.9984 21.024 78.4864 20C77.9744 18.976 77.7184 17.768 77.7184 16.376C77.7184 15 77.9744 13.8 78.4864 12.776C78.9984 11.752 79.7024 10.968 80.5984 10.424C81.5104 9.88 82.5424 9.608 83.6944 9.608ZM84.5344 12.008C83.3184 12.008 82.3424 12.4 81.6064 13.184C80.8864 13.952 80.5264 15.016 80.5264 16.376C80.5264 17.736 80.8864 18.808 81.6064 19.592C82.3424 20.36 83.3184 20.744 84.5344 20.744C85.3024 20.744 85.9904 20.568 86.5984 20.216C87.2064 19.848 87.6864 19.336 88.0384 18.68C88.3904 18.024 88.5664 17.256 88.5664 16.376C88.5664 15.512 88.3904 14.752 88.0384 14.096C87.6864 13.424 87.2064 12.912 86.5984 12.56C85.9904 12.192 85.3024 12.008 84.5344 12.008ZM102.17 9.608C103.322 9.608 104.346 9.88 105.242 10.424C106.154 10.968 106.866 11.752 107.378 12.776C107.89 13.8 108.146 15 108.146 16.376C108.146 17.768 107.89 18.976 107.378 20C106.866 21.024 106.154 21.808 105.242 22.352C104.346 22.896 103.322 23.168 102.17 23.168C100.97 23.168 99.9457 22.872 99.0977 22.28C98.2497 21.688 97.6577 20.904 97.3217 19.928V23H94.5857V5.24H97.3217V12.848C97.6577 11.872 98.2497 11.088 99.0977 10.496C99.9457 9.904 100.97 9.608 102.17 9.608ZM101.33 12.008C100.562 12.008 99.8737 12.192 99.2657 12.56C98.6577 12.912 98.1777 13.424 97.8257 14.096C97.4737 14.752 97.2977 15.512 97.2977 16.376C97.2977 17.256 97.4737 18.024 97.8257 18.68C98.1777 19.336 98.6577 19.848 99.2657 20.216C99.8737 20.568 100.562 20.744 101.33 20.744C102.546 20.744 103.522 20.36 104.258 19.592C104.994 18.808 105.362 17.736 105.362 16.376C105.362 15.032 104.994 13.968 104.258 13.184C103.522 12.4 102.546 12.008 101.33 12.008ZM121.71 14.432L129.174 23H125.838L119.142 15.152V23H116.406V6.056H119.142V13.808L125.862 6.056H129.174L121.71 14.432ZM138.611 9.56C140.147 9.56 141.379 10.056 142.307 11.048C143.235 12.04 143.699 13.456 143.699 15.296V23H140.963V15.584C140.963 14.4 140.659 13.488 140.051 12.848C139.443 12.192 138.611 11.864 137.555 11.864C136.467 11.864 135.595 12.216 134.939 12.92C134.283 13.608 133.955 14.624 133.955 15.968V23H131.219V5.24H133.955V12.68C134.307 11.688 134.899 10.92 135.73 10.376C136.563 9.832 137.523 9.56 138.611 9.56ZM152.202 9.608C153.402 9.608 154.426 9.904 155.274 10.496C156.122 11.088 156.722 11.872 157.074 12.848V9.776H159.81V23H157.074V19.928C156.722 20.904 156.122 21.688 155.274 22.28C154.426 22.872 153.402 23.168 152.202 23.168C151.05 23.168 150.018 22.896 149.106 22.352C148.21 21.808 147.506 21.024 146.994 20C146.482 18.976 146.226 17.768 146.226 16.376C146.226 15 146.482 13.8 146.994 12.776C147.506 11.752 148.21 10.968 149.106 10.424C150.018 9.88 151.05 9.608 152.202 9.608ZM153.042 12.008C151.826 12.008 150.85 12.4 150.114 13.184C149.394 13.952 149.034 15.016 149.034 16.376C149.034 17.736 149.394 18.808 150.114 19.592C150.85 20.36 151.826 20.744 153.042 20.744C153.81 20.744 154.498 20.568 155.106 20.216C155.714 19.848 156.194 19.336 156.546 18.68C156.898 18.024 157.074 17.256 157.074 16.376C157.074 15.512 156.898 14.752 156.546 14.096C156.194 13.424 155.714 12.912 155.106 12.56C154.498 12.192 153.81 12.008 153.042 12.008ZM165.83 12.368C166.278 11.504 166.918 10.824 167.75 10.328C168.582 9.816 169.542 9.56 170.63 9.56V12.536H169.814C168.614 12.536 167.646 12.832 166.91 13.424C166.19 14 165.83 14.96 165.83 16.304V23H163.094V9.776H165.83V12.368ZM175.415 5.24V23H172.679V5.24H175.415ZM177.814 8.864H181.246L186.79 14.336L181.246 19.76H177.814L183.334 14.336L177.814 8.864Z" fill="#A0AEC0"/>
+                </svg>
+                <span class="ml-3 text-xl"></span>
+              </a>
+              <p class="text-sm text-gray-600 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2000-2020  —
+                <a href="https://twitter.com/kharltayyab" target="_blank" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@kharltayyab</a>
+              </p>
+              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <a href="http://facebook.com/mahrtayyabhero" target="_blank" class="text-gray-600">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                  </svg>
+                </a>
+                <a href="http://twitter.com/kharltayyab" target="_blank" class="ml-3 text-gray-600">
+                  <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                  </svg>
+                </a>
+                <a href="http://instagram.com/tayyab.kharl" target="_blank" class="ml-3 text-gray-600">
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                  </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/tayyab-kharl-23a438180/" target="_blank" class="ml-3 text-gray-600">
+                  <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                    <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                    <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                  </svg>
+                </a>
+              </span>
+            </div>
+          </footer> 
+    </body>
 </html>
-
