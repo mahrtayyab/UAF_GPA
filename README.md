@@ -18,6 +18,6 @@ Calculate your GPA (for students of University Of Agriculture Faisalabad)
 <p> Version 2.1:
                <br>
                <ol>
-                <li>Just added footer for social links</li>
+                <li>Major UI Changes (switched to Tailwind CDN)</li>
                 </ol>
                 </br>
