@@ -11,6 +11,7 @@ Currently website has update 3.2 up and running.
                <ol>
                 <li>Adding some more entry level error handling using javascript.</li>
                 <li>Filling up the grade section of the table which is not currently filled up.</li>
+                <li>Capability to calculate GPA of courses with 100 marks.</li>
                 </ol>
                 </br>
 <p>
