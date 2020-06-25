@@ -7,10 +7,9 @@
         <meta http-equiv="Expires" content="0">
         <meta name="author" content="Tayyab Kharl">
         <meta name="description" content="GPA calculator for UAF students">
-        <link rel="stylesheet" href="style.css?v=5.0">
-        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css?v=5.2">
+        <script src="script.js?v=3.2"></script>
         <link href="tailwind.min.css" rel="stylesheet">
-        <script src="script.js"></script>
     </head>
     <body>
         <header class="text-gray-500 bg-gray-900 body-font">
@@ -38,7 +37,8 @@
           <div class="bg-indigo-900 text-center py-4 lg:px-4">
             <div class="p-2 bg-indigo-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
               <span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">New</span>
-              <span class="font-semibold mr-2 text-left flex-auto">Version 2 is up, you can now calculate GPA of subject/courses having 20, 40, 60 & 80 marks.</span>
+              <span class="font-semibold mr-2 text-left flex-auto">Version 3.2 is up, you can now calculate GPA of subject/courses having 20, 40, 60 & 80 marks.</span>
+              <span class="font-semibold mr-2 text-left flex-auto">Please visit my <a href="http://github.com/mahrtayyab">Github</a> to take a long on all features of website.</span>
               <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
             </div>
           </div>
@@ -46,60 +46,123 @@
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col text-center w-full mb-12">
       <span class="sm:text-4xl text-3xl font-medium title-font mb-4 text-white" id="title">UAF GPA Calculator</span>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base" id="sub">A simple Grade Point Average calculator for the students of <strong> 'University Of Agriculture'</strong>.</p>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base" id="sub">A simple Grade Point Average calculator for the students of <strong>'University Of Agriculture'.</strong></p>
     </div>
     <div class="lg:w-1/2 md:w-2/3 mx-auto">
-      <div class="flex flex-wrap -m-2">
+      <div class="flex flex-wrap ">
         <div class="p-2 w-1/2">
           <label for="subject1t">Marks of Subject 1</label>
-          <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject1t" placeholder="Total Marks" type="number">
+          <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject1t" placeholder="Total Marks" type="number" required>
           <label for="subject1o"></label>
-          <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject1o" placeholder="Obtained Marks" type="number">
+          <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject1o" placeholder="Obtained Marks" type="number" required>
         </div>
         <div class="p-2 w-1/2">
           <label for="subject2t">Marks of Subject 2</label>
-          <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject2t" placeholder="Total Marks" type="number">
+          <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject2t" placeholder="Total Marks" type="number" required>
           <label for="subject2o"></label>
-          <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject2o" placeholder="Obtained Marks" type="number">
+          <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject2o" placeholder="Obtained Marks" type="number" required>
         </div>
         <div class="p-2 w-1/2">
             <label for="subject3t">Marks of Subject 3</label>
-            <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject3t" placeholder="Total Marks" type="number">
+            <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject3t" placeholder="Total Marks" type="number" required >
             <label for="subject3o"></label>
-            <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject3o" placeholder="Obtained Marks" type="number">
+            <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject3o" placeholder="Obtained Marks" type="number" required >
         </div>
         <div class="p-2 w-1/2">
             <label for="subject4t">Marks of Subject 4</label>
-            <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject4t" placeholder="Total Marks" type="number">
+            <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject4t" placeholder="Total Marks" type="number" required >
             <label for="subject4o"></label>
-            <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject4o" placeholder="Obtained Marks" type="number">
+            <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject4o" placeholder="Obtained Marks" type="number" required >
         </div>
         <div class="p-2 w-1/2">
             <label for="subject5t">Marks of Subject 5</label>
-            <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject5t" placeholder="Total Marks" type="number">
+            <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject5t" placeholder="Total Marks" type="number" required >
             <label for="subject5o"></label>
-            <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject5o" placeholder="Obtained Marks" type="number">
+            <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject5o" placeholder="Obtained Marks" type="number" required >
         </div>
         <div class="p-2 w-1/2">
             <label for="subject6t">Marks of Subject 6</label>
-            <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject6t"placeholder="Total Marks" type="number">
+            <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject6t"placeholder="Total Marks" type="number" required >
             <label for="subject6o"></label>
-            <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject6o" placeholder="Obtained Marks" type="number">
+            <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="subject6o" placeholder="Obtained Marks" type="number" required >
         </div>
         <div class="p-2 w-1/2">
             <label for="crehrs">Number of Credit Hours</label>
-            <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="crehrs" placeholder="Credit Hours" type="number">
+            <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="crehrs" placeholder="Credit Hours" type="number" required >
         </div>
         <!--<div class="p-2 w-full">
           <textarea class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none h-48 focus:border-indigo-500 text-base px-4 py-2 resize-none block" placeholder="Message"></textarea>
         </div>-->
         <div class="p-2 w-full">
-          <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg" type="button" onclick="GPA60()">Calculate</button>
+          <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg font-bold" id="subm" type="button" onclick="GPA60()">Calculate</button>
         </div>
         <div class="flex flex-col text-center w-full mb-2">
-        <h1 class="sm:text-4xl text-3xl font-medium title-font mb-4 text-white" id="r" >Your GPA is:</h1>
+        <h1 class="sm:text-4xl text-3xl font-medium title-font mb-4 text-white visible" id="r" >Your GPA is:</h1>
+        <h3 class="text-white" id="error" ></h3>
+      </div>
+      <div class="text-center">
+        <button type="button"  id="detail" class="hidden text-white bg-gray-300 hover:bg-gray-400 text-gray-800  px-2 rounded-l" onclick="table()">More Details +</button>
         </div>
-         <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
+        <!--Details Table-->
+        <p>
+        <div class="text-center hidden" id="info">
+        <table class="table-auto text-white rounded">
+          <thead>
+            <tr>
+              <th class="px-4 py-2">Title</th>
+              <th class="px-4 py-2">Grades</th>
+              <th class="px-4 py-2">Quality points</th>
+              <th class="px-4 py-2">Obtained Marks</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border px-4 py-2">Subject 1</td>
+              <td id="gr1" class="border px-4 py-2 text-center"></td>
+              <td id="quapo1" class="border px-4 py-2 text-center"></td>
+              <td id="OM1" class="border px-4 py-2 text-center"></td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">Subject 2</td>
+              <td id="gr2" class="border px-4 py-2 text-center"></td>
+              <td id="quapo2"class="border px-4 py-2 text-center"></td>
+              <td id="OM2" class="border px-4 py-2 text-center"></td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">Subject 3</td>
+              <td id="gr3" class="border px-4 py-2 text-center"></td>
+              <td id="quapo3" class="border px-4 py-2 text-center"></td>
+              <td id="OM3" class="border px-4 py-2 text-center"></td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">Subject 4</td>
+              <td id="gr4" class="border px-4 py-2 text-center"></td>
+              <td id="quapo4" class="border px-4 py-2 text-center"></td>
+              <td id="OM4" class="border px-4 py-2 text-center"></td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">Subject 5</td>
+              <td id="gr5" class="border px-4 py-2 text-center"></td>
+              <td id="quapo5" class="border px-4 py-2 text-center"></td>
+              <td id="OM5" class="border px-4 py-2 text-center"></td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2">Subject 6</td>
+              <td id="gr6" class="border px-4 py-2 text-center"></td>
+              <td id="quapo6" class="border px-4 py-2 text-center"></td>
+              <td id="OM6" class="border px-4 py-2 text-center"></td>
+            </tr>
+            <tr>
+              <td class="border px-4 py-2 totaltr">Total</td>
+              <td class="border px-4 py-2 text-center"></td>
+              <td id="quapot" class="border px-4 py-2 text-center totaltr"></td>
+              <td id="OMt" class="border px-4 py-2 text-center totaltr"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      </p>
+        <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
         </div>
       </div>
     </div>
