@@ -1,6 +1,8 @@
+var details
+
 function GPA60(){
   //variables for courses having 20 marks
-  var qp21 = 1
+  qp21 = 1
   var qp22 = 1.5
   var qp23 = 2
   var qp24 = 2.33
@@ -127,6 +129,28 @@ function GPA60(){
   var k = document.getElementById("subject4t").value;
   var l = document.getElementById("subject5t").value;
   var m = document.getElementById("subject6t").value;
+  var cell1gr = document.getElementById("gr1");
+  var cell1quapo = document.getElementById("quapo1");
+  var cell1OM = document.getElementById("OM1");
+  var cell2gr = document.getElementById("gr2");
+  var cell2quapo = document.getElementById("quapo2");
+  var cell2OM = document.getElementById("OM2");
+  var cell3gr = document.getElementById("gr3");
+  var cell3quapo = document.getElementById("quapo3");
+  var cell3OM = document.getElementById("OM3");
+  var cell4gr = document.getElementById("gr4");
+  var cell4quapo = document.getElementById("quapo4");
+  var cell4OM = document.getElementById("OM4");
+  var cell5gr = document.getElementById("gr5");
+  var cell5quapo = document.getElementById("quapo5");
+  var cell5OM = document.getElementById("OM5");
+  var cell6gr = document.getElementById("gr6");
+  var cell6quapo = document.getElementById("quapo6");
+  var cell6OM = document.getElementById("OM6");
+  //var celltgr = document.getElementById("gr");
+  var celltquapo = document.getElementById("quapot");
+  var celltOM = document.getElementById("OMt");
+  
 
 
   if ((a == 24) && (h == 60)) {
@@ -1170,12 +1194,77 @@ function GPA60(){
     var f1 = qp20;
   }
 
+  var totalsum = parseFloat(a) + parseFloat(b) + parseFloat(c) + parseFloat(d) + parseFloat(e) + parseFloat(f);
 
-  var sum = parseFloat(a1) + parseFloat(b1) + parseFloat(c1) + parseFloat(d1) + parseFloat(e1) + parseFloat(f1);
-  var raw = (sum/g);
-  var result = raw.toFixed(2) //reduce resultant number upto 2 decimal points.
-  document.getElementById("r").textContent = "Your GPA is:  "+ result;
-  return false;
+  var gpacontainer = document.getElementById("r");
+  var details = document.getElementById("detail");
+  var err = document.getElementById("error");
+  if (g == ""){
+    gpacontainer.classList.add("hidden");
+    gpacontainer.classList.remove("visible");
+    err.classList.add("visible");
+    err.classList.remove("hidden");
+    err.textContent = "Something went wrong please check your provided values & try again.";
+    return false;
+  }else if ((g >= "1") && (g >= "100")){
+    gpacontainer.classList.add("visible");
+    gpacontainer.classList.remove("hidden");
+    err.classList.add("hidden");
+    err.classList.remove("visible");
+    sum = parseFloat(a1) + parseFloat(b1) + parseFloat(c1) + parseFloat(d1) + parseFloat(e1) + parseFloat(f1);
+    var raw = (sum/g);
+    var result = raw.toFixed(2) //reduce resultant number upto 2 decimal points.
+    gpacontainer.textContent = "Your GPA is:  "+ result;
+    //FILL THE TABLE  
+    cell1quapo.textContent = a1;
+    cell2quapo.textContent = b1;
+    cell3quapo.textContent = c1;
+    cell4quapo.textContent = d1;
+    cell5quapo.textContent = e1;
+    cell6quapo.textContent = f1;
+    celltquapo.textContent = sum;
+    cell1OM.textContent = a;
+    cell2OM.textContent = b;
+    cell3OM.textContent = c;
+    cell4OM.textContent = d;
+    cell5OM.textContent = e;
+    cell6OM.textContent = f;
+    celltOM.textContent = totalsum;
+
+
+  }
+
+  //display more detail button
+  //details = document.getElementById("detail");
+  if (err.classList.contains("visible")){
+    details.classList.add("hidden");
+    details.classList.remove("visible");
+  }else if (err.classList.contains("hidden")){
+    details.classList.add("visible");
+    details.classList.remove("hidden");
+  }
+
+
+  
+
+  
+return false;
+
+}
+function table(){
+  //show details table
+  details = document.getElementById("detail");
+  moreinfo = document.getElementById("info");
+  moreinfo.classList.toggle("visible");
+  moreinfo.classList.toggle("hidden");
+
+  if (moreinfo.classList.contains("visible")) {
+    details.textContent = "Hide Details -";
+  }else if (moreinfo.classList.contains("hidden")){
+    details.textContent = "Show Details +";
+  }
+
 }
 
 console.log("All Good");
+
