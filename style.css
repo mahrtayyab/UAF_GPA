@@ -33,3 +33,12 @@
       margin-right: 30px !important;
     }
 }
+
+@media screen and (max-width: 599px) and (min-width: 200px) {
+    #info {
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+      overflow:scroll; 
+      width:100%;
+    }
+}
