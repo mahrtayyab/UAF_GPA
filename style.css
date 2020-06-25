@@ -9,3 +9,27 @@
 #hero{
     font-family: 'Carter One', cursive;
 }
+
+.hidden{
+    display: none ;
+}
+
+.visible{
+    display: inline;
+}
+
+#info{
+    margin-left: 30px !important;
+    border-color: gray !important;
+}
+
+.totaltr{
+    font-weight: bold !important;
+}
+
+@media screen and (max-width: 600px) {
+    #info {
+      margin-left: 30px !important;
+      margin-right: 30px !important;
+    }
+}
