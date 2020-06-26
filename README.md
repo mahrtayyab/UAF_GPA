@@ -2,16 +2,16 @@
 Calculate your GPA (for students of University Of Agriculture Faisalabad)
 
 # Current Version:
-Currently website has update 3.2 up and running.
+Currently website has update 3.5 up and running.
 <p>For changelogs refer to changelog section below:</p>
 
 # Coming Soon:
- <p> Version 3.5:
+ <p> Version 4.0:
                <br>
                <ol>
-                <li>Adding some more entry level error handling using javascript.</li>
-                <li>Filling up the grade section of the table which is not currently filled up.</li>
-                <li>Capability to calculate GPA of courses with 100 marks.</li>
+                <li><strong>Ability to scrap your result from university website directly</strong></li>
+                <li>Some UI changes.</li>
+                <li>Bugs fixes.</li>
                 </ol>
                 </br>
 <p>
@@ -50,6 +50,15 @@ Currently website has update 3.2 up and running.
                <ol>
                 <li>Added some entry level error handling using javascript.</li>
                 <li>Added a table for viewing more information regarding the result which includes quality point of each subject & total marks.</li>
+                </ol>
+                </br>
+<p>
+<p> Version 3.5:
+               <br>
+               <ol>
+                <li>Added some more entry level error handling using javascript.</li>
+                <li>The grades of courses will also appear in table now.</li>
+                <li>Updated calculator with capability to calculate GPA of courses with 100 marks.</li>
                 </ol>
                 </br>
 <p>
