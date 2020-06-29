@@ -139,7 +139,7 @@ function GPA60(){
 
 
 
-//grabbing the values entered by th user
+//grabbing the values entered by the user
   var a = document.getElementById("subject1o").value;
   var b = document.getElementById("subject2o").value;
   var c = document.getElementById("subject3o").value;
@@ -157,24 +157,30 @@ function GPA60(){
   var cell1gr = document.getElementById("gr1");
   var cell1quapo = document.getElementById("quapo1");
   var cell1OM = document.getElementById("OM1");
+  var cell1pr = document.getElementById("pr1");
   var cell2gr = document.getElementById("gr2");
   var cell2quapo = document.getElementById("quapo2");
   var cell2OM = document.getElementById("OM2");
+  var cell2pr = document.getElementById("pr2");
   var cell3gr = document.getElementById("gr3");
   var cell3quapo = document.getElementById("quapo3");
   var cell3OM = document.getElementById("OM3");
+  var cell3pr = document.getElementById("pr3");
   var cell4gr = document.getElementById("gr4");
   var cell4quapo = document.getElementById("quapo4");
   var cell4OM = document.getElementById("OM4");
+  var cell4pr = document.getElementById("pr4");
   var cell5gr = document.getElementById("gr5");
   var cell5quapo = document.getElementById("quapo5");
   var cell5OM = document.getElementById("OM5");
+  var cell5pr = document.getElementById("pr5");
   var cell6gr = document.getElementById("gr6");
   var cell6quapo = document.getElementById("quapo6");
   var cell6OM = document.getElementById("OM6");
+  var cell6pr = document.getElementById("pr6");
   var celltquapo = document.getElementById("quapot");
   var celltOM = document.getElementById("OMt");
-  
+  var celltpr = document.getElementById("pr");
   
   //actual alog for calculation
 
@@ -2467,8 +2473,8 @@ function GPA60(){
     var grade6 = "NaN";
   }
 
-  var totalsum = parseFloat(a) + parseFloat(b) + parseFloat(c) + parseFloat(d) + parseFloat(e) + parseFloat(f);
-
+  var totalsumob = parseFloat(a) + parseFloat(b) + parseFloat(c) + parseFloat(d) + parseFloat(e) + parseFloat(f);
+  var totalsum = parseFloat(h) + parseFloat(i) + parseFloat(j) + parseFloat(k) + parseFloat(l) + parseFloat(m);
   var gpacontainer = document.getElementById("r");
   var details = document.getElementById("detail");
   var err = document.getElementById("error");
@@ -2486,8 +2492,25 @@ function GPA60(){
     err.classList.remove("visible");
     sum = parseFloat(a1) + parseFloat(b1) + parseFloat(c1) + parseFloat(d1) + parseFloat(e1) + parseFloat(f1);
     var raw = (sum/g);
-    var result = raw.toFixed(2) //reduce resultant number upto 2 decimal points.
+    var result = raw.toFixed(2); //reduce resultant number upto 2 decimal points.
     gpacontainer.textContent = "Your GPA is:  "+ result;
+
+    //for percentage calculation.
+    per1 = ((a/h)*100);
+    per1f = per1.toFixed(2);
+    per2 = ((b/i)*100);
+    per2f = per2.toFixed(2);
+    per3 = ((c/j)*100);
+    per3f = per3.toFixed(2);
+    per4 = ((d/k)*100);
+    per4f = per4.toFixed(2);
+    per5 = ((e/l)*100);
+    per5f = per5.toFixed(2);
+    per6 = ((f/m)*100);
+    per6f = per6.toFixed(2);
+    per = ((totalsumob/totalsum)*100);
+    perf = per.toFixed(2);
+
     //FILL THE TABLE  
     cell1quapo.textContent = a1;
     cell2quapo.textContent = b1;
@@ -2502,13 +2525,20 @@ function GPA60(){
     cell4OM.textContent = d;
     cell5OM.textContent = e;
     cell6OM.textContent = f;
-    celltOM.textContent = totalsum;
+    celltOM.textContent = totalsumob;
     cell1gr.textContent = grade1;
     cell2gr.textContent = grade2;
     cell3gr.textContent = grade3;
     cell4gr.textContent = grade4;
     cell5gr.textContent = grade5;
     cell6gr.textContent = grade6;
+    cell1pr.textContent = per1f;
+    cell2pr.textContent = per2f;
+    cell3pr.textContent = per3f;
+    cell4pr.textContent = per4f;
+    cell5pr.textContent = per5f;
+    cell6pr.textContent = per6f;
+    celltpr.textContent = perf;
 
   }
 
@@ -2543,6 +2573,7 @@ function table(){
   }
 
 }
+
 
 console.log("All Good");
 
