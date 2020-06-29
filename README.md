@@ -70,7 +70,7 @@ Currently website has update 3.7 up and running.
  <strong>Version 3.7</strong>:
                <br>
                <ol>
-                <li>Added <strong>Percentage%</storng> in table for individual subjects as well total percentage.</li>
+                <li>Added <strong>Percentage%</strong> in table for individual subjects as well total percentage.</li>
                 <li>Minor UI changes you ight not even feel but they do matter.</li>
                 </ol>
                 </br>
