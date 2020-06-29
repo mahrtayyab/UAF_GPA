@@ -15,26 +15,26 @@
 }
 
 .visible{
-    display: inline;
+    display: block;
 }
 
 #info{
     margin-left: 30px !important;
-    border-color: gray !important;
 }
 
-.totaltr{
-    font-weight: bold !important;
-}
 
-@media screen and (max-width: 600px) {
+
+
+
+
+@media screen and (max-width: 601px) {
     #info {
       margin-left: 30px !important;
       margin-right: 30px !important;
     }
 }
 
-@media screen and (max-width: 599px) and (min-width: 200px) {
+@media screen and (max-width: 600px) and (min-width: 200px) {
     #info {
       margin-left: 0px !important;
       margin-right: 0px !important;
