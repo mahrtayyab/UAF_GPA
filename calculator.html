@@ -9,9 +9,10 @@
         <meta name="description" content="GPA calculator for UAF students">
         <link rel="stylesheet" href="style.css?v=5.3">
         <script src="script.js?v=3.7"></script>
+        <script src="onload.js"></script>
         <link href="tailwind.min.css" rel="stylesheet">
     </head>
-    <body>
+    <body onload="bold()">
         <header class="text-gray-500 bg-gray-900 body-font">
             <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
               <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
@@ -42,12 +43,14 @@
               <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
             </div>
           </div>
+          <!--Head Title Area-->
           <section class="text-gray-500 bg-gray-900 body-font relative">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col text-center w-full mb-12">
       <span class="sm:text-4xl text-3xl font-medium title-font mb-4 text-white" id="title">UAF GPA Calculator</span>
       <p class="lg:w-2/3 mx-auto leading-relaxed text-base" id="sub">A simple Grade Point Average calculator for the students of <strong>'University Of Agriculture'.</strong></p>
     </div>
+    <!--Input Form-->
     <div class="lg:w-1/2 md:w-2/3 mx-auto">
       <div class="flex flex-wrap ">
         <div class="p-2 w-1/2">
@@ -90,9 +93,6 @@
             <label for="crehrs">Number of Credit Hours</label>
             <input class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none focus:border-indigo-500 text-base px-4 py-2" id="crehrs" placeholder="Credit Hours" type="number" >
         </div>
-        <!--<div class="p-2 w-full">
-          <textarea class="w-full bg-gray-800 rounded border border-gray-700 text-white focus:outline-none h-48 focus:border-indigo-500 text-base px-4 py-2 resize-none block" placeholder="Message"></textarea>
-        </div>-->
         <div class="p-2 w-full">
           <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg font-bold" id="subm" type="button" onclick="GPA60()">Calculate</button>
         </div>
@@ -106,8 +106,8 @@
         <!--Details Table-->
         <p>
         <div class="text-center hidden" id="info">
-        <table class="table-auto text-white ">
-          <thead>
+        <table class="table-auto text-white">
+          <thead class="bg-gray-500 text-black">
             <tr>
               <th class="px-4 py-2"></th>
               <th class="px-4 py-2">Grade</th>
@@ -118,56 +118,57 @@
           </thead>
           <tbody>
             <tr>
-              <td class="border border-gray-700 px-4 py-2">Subject 1</td>
-              <td id="gr1" class="border border-gray-700 px-4 py-2 text-center"></td>
-              <td id="quapo1" class="border border-gray-700 px-4 py-2 text-center"></td>
-              <td id="OM1" class="border border-gray-700 px-4 py-2 text-center"></td>
-              <td id="pr1" class="border border-gray-700 px-4 py-2 text-center"></td>
+              <td class="px-4 py-2">Subject 1</td>
+              <td id="gr1" class="px-4 py-2 text-center"></td>
+              <td id="quapo1" class="px-4 py-2 text-center"></td>
+              <td id="OM1" class="px-4 py-2 text-center"></td>
+              <td id="pr1" class="px-4 py-2 text-center"></td>
             </tr>
             <tr>
-              <td class="border border-gray-700 px-4 py-2">Subject 2</td>
-              <td id="gr2" class="border border-gray-700 px-4 py-2 text-center"></td>
-              <td id="quapo2"class="border border-gray-700 px-4 py-2 text-center"></td>
-              <td id="OM2" class="border border-gray-700 px-4 py-2 text-center"></td>
-              <td id="pr2" class="border border-gray-700 px-4 py-2 text-center"></td>
+              <td class="px-4 py-2">Subject 2</td>
+              <td id="gr2" class="px-4 py-2 text-center"></td>
+              <td id="quapo2"class="px-4 py-2 text-center"></td>
+              <td id="OM2" class="px-4 py-2 text-center"></td>
+              <td id="pr2" class="px-4 py-2 text-center"></td>
             </tr>
             <tr>
-              <td class="border border-gray-700 px-4 py-2">Subject 3</td>
-              <td id="gr3" class="border border-gray-700 px-4 py-2 text-center"></td>
-              <td id="quapo3" class="border border-gray-700 px-4 py-2 text-center"></td>
-              <td id="OM3" class="border border-gray-700 px-4 py-2 text-center"></td>
-              <td id="pr3" class="border border-gray-700 px-4 py-2 text-center"></td>
+              <td class="px-4 py-2">Subject 3</td>
+              <td id="gr3" class="px-4 py-2 text-center"></td>
+              <td id="quapo3" class="px-4 py-2 text-center"></td>
+              <td id="OM3" class="px-4 py-2 text-center"></td>
+              <td id="pr3" class="px-4 py-2 text-center"></td>
             </tr>
             <tr>
-              <td class="border border-gray-700 px-4 py-2">Subject 4</td>
-              <td id="gr4" class="border border-gray-700 px-4 py-2 text-center"></td>
-              <td id="quapo4" class="border border-gray-700 px-4 py-2 text-center"></td>
-              <td id="OM4" class="border border-gray-700 px-4 py-2 text-center"></td>
-              <td id="pr4" class="border border-gray-700 px-4 py-2 text-center"></td>
+              <td class="px-4 py-2">Subject 4</td>
+              <td id="gr4" class="px-4 py-2 text-center"></td>
+              <td id="quapo4" class="px-4 py-2 text-center"></td>
+              <td id="OM4" class="px-4 py-2 text-center"></td>
+              <td id="pr4" class="px-4 py-2 text-center"></td>
             </tr>
             <tr>
-              <td class="border border-gray-700 px-4 py-2">Subject 5</td>
-              <td id="gr5" class="border border-gray-700 px-4 py-2 text-center"></td>
-              <td id="quapo5" class="border border-gray-700 px-4 py-2 text-center"></td>
-              <td id="OM5" class="border border-gray-700 px-4 py-2 text-center"></td>
-              <td id="pr5" class="border border-gray-700 px-4 py-2 text-center"></td>
+              <td class="px-4 py-2">Subject 5</td>
+              <td id="gr5" class="px-4 py-2 text-center"></td>
+              <td id="quapo5" class="px-4 py-2 text-center"></td>
+              <td id="OM5" class="px-4 py-2 text-center"></td>
+              <td id="pr5" class="px-4 py-2 text-center"></td>
             </tr>
             <tr>
-              <td class="border border-gray-700 px-4 py-2">Subject 6</td>
-              <td id="gr6" class="border border-gray-700 px-4 py-2 text-center"></td>
-              <td id="quapo6" class="border border-gray-700 px-4 py-2 text-center"></td>
-              <td id="OM6" class="border border-gray-700 px-4 py-2 text-center"></td>
-              <td id="pr6" class="border border-gray-700 px-4 py-2 text-center"></td>
+              <td class="px-4 py-2">Subject 6</td>
+              <td id="gr6" class="px-4 py-2 text-center"></td>
+              <td id="quapo6" class="px-4 py-2 text-center"></td>
+              <td id="OM6" class="px-4 py-2 text-center"></td>
+              <td id="pr6" class="px-4 py-2 text-center"></td>
             </tr>
             <tr>
-              <td class="border border-gray-700 px-4 py-2 font-bold">Total</td>
-              <td class="border border-gray-700 px-4 py-2 text-center"></td>
-              <td id="quapot" class="border border-gray-700 px-4 py-2 text-center font-bold"></td>
-              <td id="OMt" class="border border-gray-700 px-4 py-2 text-center font-bold"></td>
-              <td id="pr" class="border border-gray-700 px-4 py-2 text-center font-bold"></td>
+              <td class="px-4 py-2 font-bold">Total</td>
+              <td class="px-4 py-2 text-center"></td>
+              <td id="quapot" class="px-4 py-2 text-center font-bold"></td>
+              <td id="OMt" class="px-4 py-2 text-center font-bold"></td>
+              <td id="pr" class="px-4 py-2 text-center font-bold"></td>
             </tr>
           </tbody>
         </table>
+        <p id="warn" class="text-red-500 text-xs italic">Please slide right for full table.</p>
       </div>
       </p>
         <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
