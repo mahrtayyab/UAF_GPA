@@ -2472,6 +2472,7 @@ function GPA60(){
     var f1 = qp20;
     var grade6 = "NaN";
   }
+  
 
   var totalsumob = parseFloat(a) + parseFloat(b) + parseFloat(c) + parseFloat(d) + parseFloat(e) + parseFloat(f);
   var totalsum = parseFloat(h) + parseFloat(i) + parseFloat(j) + parseFloat(k) + parseFloat(l) + parseFloat(m);
@@ -2572,6 +2573,10 @@ function table(){
     details.textContent = "Show Details +";
   }
 
+}
+
+function bold(){
+  document.getElementById("active").classList.add("font-bold");
 }
 
 
