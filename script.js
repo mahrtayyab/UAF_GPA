@@ -182,6 +182,58 @@ function GPA60(){
   var celltOM = document.getElementById("OMt");
   var celltpr = document.getElementById("pr");
   
+  //checking for empty values and assigning 0 to them
+
+  if (a == ""){
+    a = qp20;
+  }
+  
+  if (b == ""){
+    b = qp20;
+  }
+  
+  if(c == ""){
+    c = qp20;
+  }
+  
+  if(d == ""){
+    d = qp20;
+  }
+   
+  if(e == ""){
+    e = qp20;
+  }
+  
+  if(f == ""){
+    f = qp20;
+  }
+
+  if(h == ""){
+    h = qp20;
+  }
+
+  if(i == ""){
+    i = qp20;
+  }
+
+  if(j == ""){
+    j = qp20;
+  }
+
+  if(k == ""){
+    k = qp20;
+  }
+
+  if(l == ""){
+    l = qp20;
+  }
+
+  if(m == ""){
+    m = qp20;
+  }
+
+
+
   //actual alog for calculation
 
   if ((a == 24) && (h == 60)) {
@@ -2473,7 +2525,6 @@ function GPA60(){
     var grade6 = "NaN";
   }
   
-
   var totalsumob = parseFloat(a) + parseFloat(b) + parseFloat(c) + parseFloat(d) + parseFloat(e) + parseFloat(f);
   var totalsum = parseFloat(h) + parseFloat(i) + parseFloat(j) + parseFloat(k) + parseFloat(l) + parseFloat(m);
   var gpacontainer = document.getElementById("r");
@@ -2498,20 +2549,45 @@ function GPA60(){
 
     //for percentage calculation.
     per1 = ((a/h)*100);
-    per1f = per1.toFixed(2);
+    if ((a == 0) || (h == 0)){
+      per1f = 0;
+    }else{
+      per1f = per1.toFixed(2);
+    }
     per2 = ((b/i)*100);
-    per2f = per2.toFixed(2);
+    if ((b == 0) || (i == 0)){
+      per2f = 0;
+    }else{
+      per2f = per2.toFixed(2);
+    }
     per3 = ((c/j)*100);
-    per3f = per3.toFixed(2);
+    if ((c == 0) || (j == 0)){
+      per3f = 0;
+    }else{
+      per3f = per3.toFixed(2);
+    }
     per4 = ((d/k)*100);
-    per4f = per4.toFixed(2);
+    if ((d == 0) || (k == 0)){
+      per4f = 0;
+    }else{
+      per4f = per4.toFixed(2);
+    }
     per5 = ((e/l)*100);
-    per5f = per5.toFixed(2);
+    if ((e == 0) || (l == 0)){
+      per5f = 0;
+    }else{
+      per5f = per5.toFixed(2);
+    }
     per6 = ((f/m)*100);
-    per6f = per6.toFixed(2);
+    if ((f == 0) || (m == 0)){
+      per6f = 0;
+    }else{
+      per6f = per6.toFixed(2);
+    }
     per = ((totalsumob/totalsum)*100);
-    perf = per.toFixed(2);
-
+    perf = per.toFixed(2) + " % ";
+    
+   
     //FILL THE TABLE  
     cell1quapo.textContent = a1;
     cell2quapo.textContent = b1;
@@ -2575,9 +2651,7 @@ function table(){
 
 }
 
-function bold(){
-  document.getElementById("active").classList.add("font-bold");
-}
+
 
 
 console.log("All Good");
