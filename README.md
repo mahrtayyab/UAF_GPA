@@ -1,12 +1,12 @@
 # UAF_GPA
-Calculate your GPA (for students of University Of Agriculture Faisalabad)
+Calculate your GPA (for students of University Of Agriculture Faisalabad).
 
 # Current Version:
-Currently website has update 3.9 up and running.
+Currently website has update 4.0 up and running.
 <p>For changelogs refer to changelog section below:</p>
 
 # Coming Soon:
- <p> Version 4.0:
+ <p>
                <br>
                <ol>
                 <li><strong>Ability to scrap your result from university website directly</strong></li>
@@ -71,7 +71,7 @@ Currently website has update 3.9 up and running.
                <br>
                <ol>
                 <li>Added <strong>Percentage%</strong> in table for individual subjects as well total percentage.</li>
-                <li>Minor UI changes you ight not even feel but they do matter.</li>
+                <li>Minor UI changes you might not even feel but they do matter.</li>
                 </ol>
                 </br>
 </p>
@@ -81,6 +81,15 @@ Currently website has update 3.9 up and running.
                <ol>
                 <li>Some UI changes in Table and in top navbar.</li>
                 <li>Better responsiveness for mobile devices.</li>
+                </ol>
+                </br>
+</p>
+<p>
+ <strong>Version 4.0</strong>:
+               <br>
+               <ol>
+                <li>Bugs fixes in table.</li>
+                <li>Subject name in table is now editable.</li>
                 </ol>
                 </br>
 </p>
