@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,700&display=swap');
 
 
 #active{
@@ -6,8 +7,14 @@
 }
 
 
-#hero{
-    font-family: 'Carter One', cursive;
+#title{
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-size: 50px;
+}
+
+#form-width{
+    width:85%;
 }
 
 .hidden{
@@ -19,16 +26,17 @@
 }
 
 #info{
-    margin-left: 30px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0 ,0 ,0 , 0.15);
+    align-items: center;
 }
 
 #warn{
     display:none
 }
-
 
 
 tbody tr {
@@ -44,7 +52,7 @@ tbody tr:last-of-type{
 }
 
 
-@media screen and (max-width: 601px) {
+@media screen and (min-width: 601px) and (max-width:1200px) {
     #info {
       margin-left: 30px !important;
       margin-right: 30px !important;
@@ -52,8 +60,8 @@ tbody tr:last-of-type{
     #warn{
         display:inline;
     }
-    #info{
-        margin:5px 0 0 0;
+    #title{
+        font-size:35px;
     }
 }
 
@@ -67,7 +75,7 @@ tbody tr:last-of-type{
     #warn{
         display:inline;
     }
-    #info{
-        margin:5px 0 0 0;
+    #title{
+        font-size:35px;
     }
 }
