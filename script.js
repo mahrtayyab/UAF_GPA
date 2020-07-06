@@ -135,7 +135,7 @@ function GPA60(){
    qp159 = 19.67
    qp160 = 20
 
-  //variabls for quality points ended
+  //variables for quality points ended
 
 
 
@@ -182,7 +182,7 @@ function GPA60(){
    celltOM = document.getElementById("OMt");
    celltpr = document.getElementById("pr");
   
-  //checking for empty values and assigning 0 to them
+  //checking for empty values and assigning zero to them
 
   if (a == ""){
     a = qp20;
@@ -234,7 +234,7 @@ function GPA60(){
 
 
 
-  //actual alog for calculation
+  //actual logic for calculation
 
   if ((a == 24) && (h == 60)) {
        a1 = qp61;
@@ -2524,34 +2524,54 @@ function GPA60(){
      f1 = qp20;
      grade6 = "NaN";
   }
-  
-   totalsumob = parseFloat(a) + parseFloat(b) + parseFloat(c) + parseFloat(d) + parseFloat(e) + parseFloat(f);
-   totalsum = parseFloat(h) + parseFloat(i) + parseFloat(j) + parseFloat(k) + parseFloat(l) + parseFloat(m);
+
+
    gpacontainer = document.getElementById("r");
    details = document.getElementById("detail");
    err = document.getElementById("error");
-  if (g == ""){
-    gpacontainer.classList.add("hidden");
-    gpacontainer.classList.remove("visible");
-    err.classList.add("visible");
-    err.classList.remove("hidden");
-    err.textContent = "Something went wrong please check your provided values & try again.";
-    return false;
-  }else if ((g >= "1") && (g >= "100")){
-    gpacontainer.classList.add("visible");
-    gpacontainer.classList.remove("hidden");
-    err.classList.add("hidden");
-    err.classList.remove("visible");
-    sum = parseFloat(a1) + parseFloat(b1) + parseFloat(c1) + parseFloat(d1) + parseFloat(e1) + parseFloat(f1);
-    raw = (sum/g);
-    result = raw.toFixed(2); //reduce resultant number upto 2 decimal points.
-    gpacontainer.textContent = "Your GPA is:  "+ result;
-    gpacontainer.scrollIntoView(); 
-
+//checking if values are equal to either 20 40 60 80 or 100.
+  if ((h == 60 || h == 80 || h == 20 || h == 40 || h == 100) && (i == 60 || i == 80 ||i == 20 || i == 40 || i == 100) && (j == 60 || j == 80 || j == 20 || j == 40 || j == 100) && (k == 60 || k == 80 || k == 20 || k == 40 || k == 100) && (l == 60 || l == 80 || l == 20 || l == 40 || l == 100) && (m == 60 || m == 80 || m == 20 || m == 40 || m == 100)){
+     //checking if obtained marks are not exceeding total marks.
+         if ((a <= h) && (b <= i) && (c <= j) && (d <= k) && (e <= l) && (f <= m)){
+               totalsumob = parseFloat(a) + parseFloat(b) + parseFloat(c) + parseFloat(d) + parseFloat(e) + parseFloat(f);
+               totalsum = parseFloat(h) + parseFloat(i) + parseFloat(j) + parseFloat(k) + parseFloat(l) + parseFloat(m);
+               //checking if the credit hours are zero
+            if (g == ""){
+               gpacontainer.classList.add("hidden");
+               gpacontainer.classList.remove("visible");
+               err.classList.add("visible");
+               err.classList.remove("hidden");
+               err.textContent = "Something went wrong please check your provided values & try again.";
+               return false;
+            }else if ((g >= "1") && (g >= "100")){
+               gpacontainer.classList.add("visible");
+               gpacontainer.classList.remove("hidden");
+               err.classList.add("hidden");
+               err.classList.remove("visible");
+               sum = parseFloat(a1) + parseFloat(b1) + parseFloat(c1) + parseFloat(d1) + parseFloat(e1) + parseFloat(f1);
+               raw = (sum/g);
+               result = raw.toFixed(2); //reduce resultant number upto 2 decimal points.
+               gpacontainer.textContent = "Your GPA is:  "+ result;
+               gpacontainer.scrollIntoView(); //scroll to GPA number
+            }
+      }else {
+         gpacontainer.classList.add("hidden");
+         gpacontainer.classList.remove("visible");
+         err.classList.add("visible");
+         err.classList.remove("hidden");
+         err.textContent = "Something went wrong please check your provided values & try again.";
+         return false;
+      }
+  }else {
+      gpacontainer.classList.add("hidden");
+      gpacontainer.classList.remove("visible");
+      err.classList.add("visible");
+      err.classList.remove("hidden");
+      err.textContent = "Something went wrong please check your provided values & try again.";
+  return false;
   }
 
   //display more detail button
-  //details = document.getElementById("detail");
   if (err.classList.contains("visible")){
     details.classList.add("hidden");
     details.classList.remove("visible");
@@ -2611,6 +2631,7 @@ function table(){
 
 
   //FILL THE TABLE  
+
   cell1quapo.textContent = a1;
   cell2quapo.textContent = b1;
   cell3quapo.textContent = c1;
