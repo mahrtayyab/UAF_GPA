@@ -2,7 +2,7 @@
 Calculate your GPA (for students of University Of Agriculture Faisalabad).
 
 # Current Version:
-Currently website has update 4.0 up and running.
+Currently website has update 4.1 up and running.
 <p>For changelogs refer to changelog section below:</p>
 
 # Coming Soon:
@@ -90,6 +90,16 @@ Currently website has update 4.0 up and running.
                <ol>
                 <li>Bugs fixes in table.</li>
                 <li>Subject name in table is now editable.</li>
+                </ol>
+                </br>
+</p>
+<p>
+ <strong>Version 4.1</strong>:
+               <br>
+               <ol>
+                <li>Bugs fixes.</li>
+                <li>Optimized website resources (litte bit).</li>
+                <li>Small UI changes.</li>
                 </ol>
                 </br>
 </p>
