@@ -2,7 +2,8 @@
 Calculate your GPA (for students of University Of Agriculture Faisalabad).
 
 # Current Version:
-Currently website has update 4.2 up and running.
+Currently website has update 4.3 up and running.
+<li><strong>Ability to scrap your result from university website directly @ http://uaf-gpa.herokuapp.com</strong></li>
 <p>For changelogs refer to ChangeLogs section below:</p>
 
 # Features:
@@ -17,6 +18,7 @@ Currently website has update 4.2 up and running.
                    <li>Quality Points of each course and total.</li>
                    <li>Obtained marks of each course and total.</li>
                    <li>Percentage of each course and total.</li>
+                   <li><strong><font size="250" color="black">Ability to scrap your result from university website directly</font></strong></li>
                  </ol>
                     </br>
                 </li>
@@ -27,7 +29,6 @@ Currently website has update 4.2 up and running.
  <p>
                <br>
                <ol>
-                <li><strong>Ability to scrap your result from university website directly</strong></li>
                 <li>Bugs fixes.</li>
                 </ol>
                 </br>
@@ -126,6 +127,16 @@ Currently website has update 4.2 up and running.
                <br>
                <ol>
                 <li>Error fixes.</li>
+                <li>Optimized javascript</li>
+                <li>Small UI changes.</li>
+                </ol>
+                </br>
+</p>
+<p>
+ <strong>Version 4.3</strong>:
+               <br>
+               <ol>
+                <li><strong>Ability to scrap your result from university website directly</strong></li>@ http://uaf-gpa.herokuapp.com
                 <li>Optimized javascript</li>
                 <li>Small UI changes.</li>
                 </ol>
