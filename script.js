@@ -1,8 +1,8 @@
- 
+ var g
 
 function GPA60(){
   //variables for courses having 20 marks
-  qp21 = 1
+   qp21 = 1
    qp22 = 1.5
    qp23 = 2
    qp24 = 2.33
@@ -65,30 +65,30 @@ function GPA60(){
    qp89 = 5.5
    qp90 = 6
    qp91 = 6.5
-   qp91 = 7
-   qp92 = 7.5
-   qp93 = 8
-   qp94 = 8.33
-   qp95 = 8.67
-   qp96 = 9
-   qp97 = 9.33
-   qp98 = 9.67
-   qp99 = 10
-   qp100 = 10.33
-   qp101 = 10.67
-   qp102 = 11
-   qp103 = 11.33
-   qp104 = 11.67
-   qp105 = 12
-   qp106 = 12.33
-   qp107 = 12.67
-   qp108 = 13
-   qp109 = 13.33
-   qp110 = 13.67
-   qp111 = 14
-   qp112 = 14.33
-   qp113 = 14.67
-   qp114 = 15
+   qp92 = 7
+   qp93 = 7.5
+   qp94 = 8
+   qp95 = 8.33
+   qp96 = 8.67
+   qp97 = 9
+   qp98 = 9.33
+   qp99 = 9.67
+   qp100 = 10
+   qp101 = 10.33
+   qp102 = 10.67
+   qp103 = 11
+   qp104 = 11.33
+   qp105 = 11.67
+   qp106 = 12
+   qp107 = 12.33
+   qp108 = 12.67
+   qp109 = 13
+   qp110 = 13.33
+   qp111 = 13.67
+   qp112 = 14
+   qp113 = 14.33
+   qp114 = 14.67
+   qp115 = 15
    qp116 = 15.33
    qp117 = 15.67
    qp118 = 16
@@ -146,6 +146,10 @@ function GPA60(){
    d = document.getElementById("subject4o").value;
    e = document.getElementById("subject5o").value;
    f = document.getElementById("subject6o").value;
+   n1 = document.getElementById("subject7o").value;
+   o1 = document.getElementById("subject8o").value;
+   p1 = document.getElementById("subject9o").value;
+   q1 = document.getElementById("subject10o").value;
    g = document.getElementById("crehrs").value;
    h = document.getElementById("subject1t").value;
    i = document.getElementById("subject2t").value;
@@ -153,6 +157,10 @@ function GPA60(){
    k = document.getElementById("subject4t").value;
    l = document.getElementById("subject5t").value;
    m = document.getElementById("subject6t").value;
+   r1 = document.getElementById("subject7t").value;
+   s1 = document.getElementById("subject8t").value;
+   t1 = document.getElementById("subject9t").value;
+   u1 = document.getElementById("subject10t").value;
   //grabbing the table 
    cell1gr = document.getElementById("gr1");
    cell1quapo = document.getElementById("quapo1");
@@ -178,6 +186,22 @@ function GPA60(){
    cell6quapo = document.getElementById("quapo6");
    cell6OM = document.getElementById("OM6");
    cell6pr = document.getElementById("pr6");
+   cell7gr = document.getElementById("gr7");
+   cell7quapo = document.getElementById("quapo7");
+   cell7OM = document.getElementById("OM7");
+   cell7pr = document.getElementById("pr7");
+   cell8gr = document.getElementById("gr8");
+   cell8quapo = document.getElementById("quapo8");
+   cell8OM = document.getElementById("OM8");
+   cell8pr = document.getElementById("pr8");
+   cell9gr = document.getElementById("gr9");
+   cell9quapo = document.getElementById("quapo9");
+   cell9OM = document.getElementById("OM9");
+   cell9pr = document.getElementById("pr9");
+   cell10gr = document.getElementById("gr10");
+   cell10quapo = document.getElementById("quapo10");
+   cell10OM = document.getElementById("OM10");
+   cell10pr = document.getElementById("pr10");
    celltquapo = document.getElementById("quapot");
    celltOM = document.getElementById("OMt");
    celltpr = document.getElementById("pr");
@@ -231,6 +255,32 @@ function GPA60(){
   if(m == ""){
     m = qp20;
   }
+
+   if (n1 == ""){
+      n1 = qp20;
+   }
+   if (o1 == ""){
+      o1 = qp20;
+   }
+   if (p1 == ""){
+      p1 = qp20;
+   }
+   if (q1 == ""){
+      q1 = qp20;
+   }
+
+   if (r1 == ""){
+      r1 = qp20;
+   }
+   if (s1 == ""){
+      s1 = qp20;
+   }
+   if (t1 == ""){
+      t1 = qp20;
+   }
+   if (u1 == ""){
+      u1 = qp20;
+   }
 
 
 
@@ -2526,29 +2576,1551 @@ function GPA60(){
   }
 
 
+  if ((n1 == 24) && (r1 == 60)) {
+       g1 = qp61;
+       grade7 = "D";
+  }else if ((n1 == 25) && (r1 == 60)) {
+     g1 = qp62;
+     grade7 = "D";
+  }else if ((n1 == 26) && (r1 == 60)) {
+     g1 = qp63;
+     grade7 = "D";
+  }else if ((n1 == 27) && (r1 == 60)) {
+     g1 = qp64;
+     grade7 = "D";
+  }else if ((n1 == 28) && (r1 == 60)) {
+     g1 = qp65;
+     grade7 = "D";
+  }else if ((n1 == 29) && (r1 == 60)) {
+     g1 = qp66;
+     grade7 = "D";
+  }else if ((n1 == 30) && (r1 == 60)) {
+     g1 = qp67;
+     grade7 = "C";
+  }else if ((n1 == 31) && (r1 == 60)) {
+     g1 = qp68;
+     grade7 = "C";
+  }else if ((n1 == 32) && (r1 == 60)) {
+     g1 = qp69;
+     grade7 = "C";
+  }else if ((n1 == 33) && (r1 == 60)) {
+     g1 = qp70;
+     grade7 = "C";
+  }else if ((n1 == 34) && (r1 == 60)) {
+     g1 = qp71;
+     grade7 = "C";
+  }else if ((n1 == 35) && (r1 == 60)) {
+     g1 = qp72;
+     grade7 = "C";
+  }else if ((n1 == 36) && (r1 == 60)) {
+     g1 = qp73;
+     grade7 = "C";
+  }else if ((n1 == 37) && (r1 == 60)) {
+     g1 = qp74;
+     grade7 = "C";
+  }else if ((n1 == 38) && (r1 == 60)) {
+     g1 = qp75;
+     grade7 = "C";
+  }else if ((n1 == 39) && (r1 == 60)) {
+     g1 = qp76;
+     grade7 = "B";
+  }else if ((n1 == 40) && (r1 == 60)) {
+     g1 = qp77;
+     grade7 = "B";
+  }else if ((n1 == 41) && (r1 == 60)) {
+     g1 = qp78;
+     grade7 = "B";
+  }else if ((n1 == 42) && (r1 == 60)) {
+     g1 = qp79;
+     grade7 = "B";
+  }else if ((n1 == 43) && (r1 == 60)) {
+     g1 = qp80;
+     grade7 = "B";
+  }else if ((n1 == 44) && (r1 == 60)) {
+     g1 = qp81;
+     grade7 = "B";
+  }else if ((n1 == 45) && (r1 == 60)) {
+     g1 = qp82;
+     grade7 = "B";
+  }else if ((n1 == 46) && (r1 == 60)) {
+     g1 = qp83;
+     grade7 = "B";
+  }else if ((n1 == 47) && (r1 == 60)) {
+     g1 = qp84;
+     grade7 = "B";
+  }else if ((n1 >= 48) && (n1 <= 60) && (r1 == 60)) {
+     g1 = qp85;
+     grade7 = "A";
+  }else if ((n1 == 8) && (r1 == 20)) {
+     g1 = qp21;
+     grade7 = "D";
+  }else if ((n1 == 9) && (r1 == 20)) {
+     g1 = qp22;
+     grade7 = "D";
+  }else if ((n1 == 10) && (r1 == 20)) {
+     g1 = qp23;
+     grade7 = "C";
+  }else if ((n1 == 11) && (r1 == 20)) {
+     g1 = qp24;
+     grade7 = "C";
+  }else if ((n1 == 12) && (r1 == 20)) {
+     g1 = qp25;
+     grade7 = "C";
+  }else if ((n1 == 13) && (r1 == 20)) {
+     g1 = qp26;
+     grade7 = "B";
+  }else if ((n1 == 14) && (r1 == 20)) {
+     g1 = qp27;
+     grade7 = "B";
+  }else if ((n1 == 15) && (r1 == 20)) {
+     g1 = qp28;
+     grade7 = "B";
+  }else if ((n1 >= 16) && (n1 <= 20) && (r1 == 20)) {
+     g1 = qp29;
+     grade7 = "A";
+  }else if ((n1 == 16) && (r1 == 40)) {
+     g1 = qp41;
+     grade7 = "D";
+  }else if ((n1 == 17) && (r1 == 40)) {
+     g1 = qp42;
+     grade7 = "D";
+  }else if ((n1 == 18) && (r1 == 40)) {
+     g1 = qp43;
+     grade7 = "D";
+  }else if ((n1 == 19) && (r1 == 40)) {
+     g1 = qp44;
+     grade7 = "D";
+  }else if ((n1 == 20) && (r1 == 40)) {
+     g1 = qp45;
+     grade7 = "C";
+  }else if ((n1 == 21) && (r1 == 40)) {
+     g1 = qp46;
+     grade7 = "C";
+  }else if ((n1 == 22) && (r1 == 40)) {
+     g1 = qp47;
+     grade7 = "C";
+  }else if ((n1 == 23) && (r1 == 40)) {
+     g1 = qp48;
+     grade7 = "C";
+  }else if ((n1 == 24) && (r1 == 40)) {
+     g1 = qp49;
+     grade7 = "C";
+  }else if ((n1 == 25) && (r1 == 40)) {
+     g1 = qp50;
+     grade7 = "C";
+  }else if ((n1 == 26) && (r1 == 40)) {
+     g1 = qp51;
+     grade7 = "B";
+  }else if ((n1 == 27) && (r1 == 40)) {
+     g1 = qp52;
+     grade7 = "B";
+  }else if ((n1 == 28) && (r1 == 40)) {
+     g1 = qp53;
+     grade7 = "B";
+  }else if ((n1 == 29) && (r1 == 40)) {
+     g1 = qp54;
+     grade7 = "B";
+  }else if ((n1 == 30) && (r1 == 40)) {
+     g1 = qp55;
+     grade7 = "B";
+  }else if ((n1 == 31) && (r1 == 40)) {
+     g1 = qp56;
+     grade7 = "B";
+  }else if ((n1 >= 32) && (n1 <= 40) && (r1 == 40)){
+     g1 = qp57;
+     grade7 = "A";
+  }else if ((n1 == 32) && (r1 == 80)) {
+     g1 = qp86;
+     grade7 = "D";
+  }else if ((n1 == 33) && (r1 == 80)) {
+     g1 = qp87;
+     grade7 = "D";
+  }else if ((n1 == 34) && (r1 == 80)) {
+     g1 = qp88;
+     grade7 = "D";
+  }else if ((n1 == 35) && (r1 == 80)) {
+     g1 = qp89;
+     grade7 = "D";
+  }else if ((n1 == 36) && (r1 == 80)) {
+     g1 = qp90;
+     grade7 = "D";
+  }else if ((n1 == 37) && (r1 == 80)) {
+     g1 = qp91;
+     grade7 = "D";
+  }else if ((n1 == 38) && (r1 == 80)) {
+     g1 = qp92;
+     grade7 = "D";
+  }else if ((n1 == 39) && (r1 == 80)) {
+     g1 = qp93;
+     grade7 = "D";
+  }else if ((n1 == 40) && (r1 == 80)) {
+     g1 = qp94;
+     grade7 = "C";
+  }else if ((n1 == 41) && (r1 == 80)) {
+     g1 = qp95;
+     grade7 = "C";
+  }else if ((n1 == 42) && (r1 == 80)) {
+     g1 = qp96;
+     grade7 = "C";
+  }else if ((n1 == 43) && (r1 == 80)) {
+     g1 = qp97;
+     grade7 = "C";
+  }else if ((n1 == 44) && (r1 == 80)) {
+     g1 = qp98;
+     grade7 = "C";
+  }else if ((n1 == 45) && (r1 == 80)) {
+     g1 = qp99;
+     grade7 = "C";
+  }else if ((n1 == 46) && (r1 == 80)) {
+     g1 = qp100;
+     grade7 = "C";
+  }else if ((n1 == 47) && (r1 == 80)) {
+     g1 = qp101;
+     grade7 = "C";
+  }else if ((n1 == 48) && (r1 == 80)) {
+     g1 = qp102;
+     grade7 = "C";
+  }else if ((n1 == 49) && (r1 == 80)) {
+     g1 = qp103;
+     grade7 = "C";
+  }else if ((n1 == 50) && (r1 == 80)) {
+     g1 = qp104;
+     grade7 = "C";
+  }else if ((n1 == 51) && (r1 == 80)) {
+     g1 = qp105;
+     grade7 = "C";
+  }else if ((n1 == 52) && (r1 == 80)) {
+     g1 = qp106;
+     grade7 = "B";
+  }else if ((n1 == 53) && (r1 == 80)) {
+     g1 = qp107;
+     grade7 = "B";
+  }else if ((n1 == 54) && (r1 == 80)) {
+     g1 = qp108;
+     grade7 = "B";
+  }else if ((n1 == 55) && (r1 == 80)) {
+     g1 = qp109;
+     grade7 = "B";
+  }else if ((n1 == 56) && (r1 == 80)) {
+     g1 = qp110;
+     grade7 = "B";
+  }else if ((n1 == 57) && (r1 == 80)) {
+     g1 = qp111;
+     grade7 = "B";
+  }else if ((n1 == 58) && (r1 == 80)) {
+     g1 = qp112;
+     grade7 = "B";
+  }else if ((n1 == 59) && (r1 == 80)) {
+     g1 = qp113;
+     grade7 = "B";
+  }else if ((n1 == 60) && (r1 == 80)) {
+     g1 = qp114;
+     grade7 = "B";
+  }else if ((n1 == 61) && (r1 == 80)) {
+     g1 = qp115;
+     grade7 = "B";
+  }else if ((n1 == 62) && (r1 == 80)) {
+     g1 = qp116;
+     grade7 = "B";
+  }else if ((n1 == 63) && (r1 == 80)) {
+     g1 = qp117;
+     grade7 = "B";
+  }else if ((n1 >= 64) && (n1 <= 80) && (r1 == 80)) {
+     g1 = qp118;
+     grade7 = "A";
+  }else if ((n1 == 40) && (r1 == 100)){
+     g1 = qp120;
+     grade7 = "D";
+  }else if ((n1 == 41) && (r1 == 100)){
+     g1 = qp121;
+     grade7 = "D";
+  }else if ((n1 == 42) && (r1 == 100)){
+     g1 = qp122;
+     grade7 = "D";
+  }else if ((n1 == 43) && (r1 == 100)){
+     g1 = qp123;
+     grade7 = "D";
+  }else if ((n1 == 44) && (r1 == 100)){
+     g1 = qp124;
+     grade7 = "D";
+  }else if ((n1 == 45) && (r1 == 100)){
+     g1 = qp125;
+     grade7 = "D";
+  }else if ((n1 == 46) && (r1 == 100)){
+     g1 = qp126;
+     grade7 = "D";
+  }else if ((n1 == 47) && (r1 == 100)){
+     g1 = qp127;
+     grade7 = "D";
+  }else if ((n1 == 48) && (r1 == 100)){
+     g1 = qp128;
+     grade7 = "D";
+  }else if ((n1 == 49) && (r1 == 100)){
+     g1 = qp129;
+     grade7 = "D";
+  }else if ((n1 == 50) && (r1 == 100)){
+     g1 = qp130;
+     grade7 = "C";
+  }else if ((n1 == 51) && (r1 == 100)){
+     g1 = qp131;
+     grade7 = "C";
+  }else if ((n1 == 52) && (r1 == 100)){
+     g1 = qp132;
+     grade7 = "C";
+  }else if ((n1 == 53) && (r1 == 100)){
+     g1 = qp133;
+     grade7 = "C";
+  }else if ((n1 == 54) && (r1 == 100)){
+     g1 = qp134;
+     grade7 = "C";
+  }else if ((n1 == 55) && (r1 == 100)){
+     g1 = qp135;
+     grade7 = "C";
+  }else if ((n1 == 56) && (r1 == 100)){
+     g1 = qp136;
+     grade7 = "C";
+  }else if ((n1 == 57) && (r1 == 100)){
+     g1 = qp137;
+     grade7 = "C";
+  }else if ((n1 == 58) && (r1 == 100)){
+     g1 = qp138;
+     grade7 = "C";
+  }else if ((n1 == 59) && (r1 == 100)){
+     g1 = qp139;
+     grade7 = "C";
+  }else if ((n1 == 60) && (r1 == 100)){
+     g1 = qp140;
+     grade7 = "C";
+  }else if ((n1 == 61) && (r1 == 100)){
+     g1 = qp141;
+     grade7 = "C";
+  }else if ((n1 == 62) && (r1 == 100)){
+     g1 = qp142;
+     grade7 = "C";
+  }else if ((n1 == 63) && (r1 == 100)){
+     g1 = qp143;
+     grade7 = "C";
+  }else if ((n1 == 64) && (r1 == 100)){
+     g1 = qp144;
+     grade7 = "C";
+  }else if ((n1 == 65) && (r1 == 100)){
+     g1 = qp145;
+     grade7 = "B";
+  }else if ((n1 == 66) && (r1 == 100)){
+     g1 = qp146;
+     grade7 = "B";
+  }else if ((n1 == 67) && (r1 == 100)){
+     g1 = qp147;
+     grade7 = "B";
+  }else if ((n1 == 68) && (r1 == 100)){
+     g1 = qp148;
+     grade7 = "B";
+  }else if ((n1 == 69) && (r1 == 100)){
+     g1 = qp149;
+     grade7 = "B";
+  }else if ((n1 == 70) && (r1 == 100)){
+     g1 = qp150;
+     grade7 = "B";
+  }else if ((n1 == 71) && (r1 == 100)){
+     g1 = qp151;
+     grade7 = "B";
+  }else if ((n1 == 72) && (r1 == 100)){
+     g1 = qp152;
+     grade7 = "B";
+  }else if ((n1 == 73) && (r1 == 100)){
+     g1 = qp153;
+     grade7 = "B";
+  }else if ((n1 == 74) && (r1 == 100)){
+     g1 = qp154;
+     grade7 = "B";
+  }else if ((n1 == 75) && (r1 == 100)){
+     g1 = qp155;
+     grade7 = "B";
+  }else if ((n1 == 76) && (r1 == 100)){
+     g1 = qp156;
+     grade7 = "B";
+  }else if ((n1 == 77) && (r1 == 100)){
+     g1 = qp157;
+     grade7 = "B";
+  }else if ((n1 == 78) && (r1 == 100)){
+     g1 = qp158;
+     grade7 = "B";
+  }else if ((n1 == 79) && (r1 == 100)){
+     g1 = qp159;
+     grade7 = "B";
+  }else if ((n1 >= 80) && (n1 <= 100) && (r1 == 100)){
+     g1 = qp160;
+     grade7 = "A";
+  }else {
+     g1 = qp20;
+     grade7 = "NaN";
+  }
+
+   if ((o1 == 24) && (s1 == 60)) {
+      h1 = qp61;
+      grade8 = "D";
+   }else if ((o1 == 25) && (s1 == 60)) {
+   h1 = qp62;
+   grade8 = "D";
+   }else if ((o1 == 26) && (s1 == 60)) {
+   h1 = qp63;
+   grade8 = "D";
+   }else if ((o1 == 27) && (s1 == 60)) {
+   h1 = qp64;
+   grade8 = "D";
+   }else if ((o1 == 28) && (s1 == 60)) {
+   h1 = qp65;
+   grade8 = "D";
+   }else if ((o1 == 29) && (s1 == 60)) {
+   h1 = qp66;
+   grade8 = "D";
+   }else if ((o1 == 30) && (s1 == 60)) {
+   h1 = qp67;
+   grade8 = "C";
+   }else if ((o1 == 31) && (s1 == 60)) {
+   h1 = qp68;
+   grade8 = "C";
+   }else if ((o1 == 32) && (s1 == 60)) {
+   h1 = qp69;
+   grade8 = "C";
+   }else if ((o1 == 33) && (s1 == 60)) {
+   h1 = qp70;
+   grade8 = "C";
+   }else if ((o1 == 34) && (s1 == 60)) {
+   h1 = qp71;
+   grade8 = "C";
+   }else if ((o1 == 35) && (s1 == 60)) {
+   h1 = qp72;
+   grade8 = "C";
+   }else if ((o1 == 36) && (s1 == 60)) {
+   h1 = qp73;
+   grade8 = "C";
+   }else if ((o1 == 37) && (s1 == 60)) {
+   h1 = qp74;
+   grade8 = "C";
+   }else if ((o1 == 38) && (s1 == 60)) {
+   h1 = qp75;
+   grade8 = "C";
+   }else if ((o1 == 39) && (s1 == 60)) {
+   h1 = qp76;
+   grade8 = "B";
+   }else if ((o1 == 40) && (s1 == 60)) {
+   h1 = qp77;
+   grade8 = "B";
+   }else if ((o1 == 41) && (s1 == 60)) {
+   h1 = qp78;
+   grade8 = "B";
+   }else if ((o1 == 42) && (s1 == 60)) {
+   h1 = qp79;
+   grade8 = "B";
+   }else if ((o1 == 43) && (s1 == 60)) {
+   h1 = qp80;
+   grade8 = "B";
+   }else if ((o1 == 44) && (s1 == 60)) {
+   h1 = qp81;
+   grade8 = "B";
+   }else if ((o1 == 45) && (s1 == 60)) {
+   h1 = qp82;
+   grade8 = "B";
+   }else if ((o1 == 46) && (s1 == 60)) {
+   h1 = qp83;
+   grade8 = "B";
+   }else if ((o1 == 47) && (s1 == 60)) {
+   h1 = qp84;
+   grade8 = "B";
+   }else if ((o1 >= 48) && (o1 <= 60) && (s1 == 60)) {
+   h1 = qp85;
+   grade8 = "A";
+   }else if ((o1 == 8) && (s1 == 20)) {
+   h1 = qp21;
+   grade8 = "D";
+   }else if ((o1 == 9) && (s1 == 20)) {
+   h1 = qp22;
+   grade8 = "D";
+   }else if ((o1 == 10) && (s1 == 20)) {
+   h1 = qp23;
+   grade8 = "C";
+   }else if ((o1 == 11) && (s1 == 20)) {
+   h1 = qp24;
+   grade8 = "C";
+   }else if ((o1 == 12) && (s1 == 20)) {
+   h1 = qp25;
+   grade8 = "C";
+   }else if ((o1 == 13) && (s1 == 20)) {
+   h1 = qp26;
+   grade8 = "B";
+   }else if ((o1 == 14) && (s1 == 20)) {
+   h1 = qp27;
+   grade8 = "B";
+   }else if ((o1 == 15) && (s1 == 20)) {
+   h1 = qp28;
+   grade8 = "B";
+   }else if ((o1 >= 16) && (o1 <= 20) && (s1 == 20)) {
+   h1 = qp29;
+   grade8 = "A";
+   }else if ((o1 == 16) && (s1 == 40)) {
+   h1 = qp41;
+   grade8 = "D";
+   }else if ((o1 == 17) && (s1 == 40)) {
+   h1 = qp42;
+   grade8 = "D";
+   }else if ((o1 == 18) && (s1 == 40)) {
+   h1 = qp43;
+   grade8 = "D";
+   }else if ((o1 == 19) && (s1 == 40)) {
+   h1 = qp44;
+   grade8 = "D";
+   }else if ((o1 == 20) && (s1 == 40)) {
+   h1 = qp45;
+   grade8 = "C";
+   }else if ((o1 == 21) && (s1 == 40)) {
+   h1 = qp46;
+   grade8 = "C";
+   }else if ((o1 == 22) && (s1 == 40)) {
+   h1 = qp47;
+   grade8 = "C";
+   }else if ((o1 == 23) && (s1 == 40)) {
+   h1 = qp48;
+   grade8 = "C";
+   }else if ((o1 == 24) && (s1 == 40)) {
+   h1 = qp49;
+   grade8 = "C";
+   }else if ((o1 == 25) && (s1 == 40)) {
+   h1 = qp50;
+   grade8 = "C";
+   }else if ((o1 == 26) && (s1 == 40)) {
+   h1 = qp51;
+   grade8 = "B";
+   }else if ((o1 == 27) && (s1 == 40)) {
+   h1 = qp52;
+   grade8 = "B";
+   }else if ((o1 == 28) && (s1 == 40)) {
+   h1 = qp53;
+   grade8 = "B";
+   }else if ((o1 == 29) && (s1 == 40)) {
+   h1 = qp54;
+   grade8 = "B";
+   }else if ((o1 == 30) && (s1 == 40)) {
+   h1 = qp55;
+   grade8 = "B";
+   }else if ((o1 == 31) && (s1 == 40)) {
+   h1 = qp56;
+   grade8 = "B";
+   }else if ((o1 >= 32) && (o1 <= 40) && (s1 == 40)){
+   h1 = qp57;
+   grade8 = "A";
+   }else if ((o1 == 32) && (s1 == 80)) {
+   h1 = qp86;
+   grade8 = "D";
+   }else if ((o1 == 33) && (s1 == 80)) {
+   h1 = qp87;
+   grade8 = "D";
+   }else if ((o1 == 34) && (s1 == 80)) {
+   h1 = qp88;
+   grade8 = "D";
+   }else if ((o1 == 35) && (s1 == 80)) {
+   h1 = qp89;
+   grade8 = "D";
+   }else if ((o1 == 36) && (s1 == 80)) {
+   h1 = qp90;
+   grade8 = "D";
+   }else if ((o1 == 37) && (s1 == 80)) {
+   h1 = qp91;
+   grade8 = "D";
+   }else if ((o1 == 38) && (s1 == 80)) {
+   h1 = qp92;
+   grade8 = "D";
+   }else if ((o1 == 39) && (s1 == 80)) {
+   h1 = qp93;
+   grade8 = "D";
+   }else if ((o1 == 40) && (s1 == 80)) {
+   h1 = qp94;
+   grade8 = "C";
+   }else if ((o1 == 41) && (s1 == 80)) {
+   h1 = qp95;
+   grade8 = "C";
+   }else if ((o1 == 42) && (s1 == 80)) {
+   h1 = qp96;
+   grade8 = "C";
+   }else if ((o1 == 43) && (s1 == 80)) {
+   h1 = qp97;
+   grade8 = "C";
+   }else if ((o1 == 44) && (s1 == 80)) {
+   h1 = qp98;
+   grade8 = "C";
+   }else if ((o1 == 45) && (s1 == 80)) {
+   h1 = qp99;
+   grade8 = "C";
+   }else if ((o1 == 46) && (s1 == 80)) {
+   h1 = qp100;
+   grade8 = "C";
+   }else if ((o1 == 47) && (s1 == 80)) {
+   h1 = qp101;
+   grade8 = "C";
+   }else if ((o1 == 48) && (s1 == 80)) {
+   h1 = qp102;
+   grade8 = "C";
+   }else if ((o1 == 49) && (s1 == 80)) {
+   h1 = qp103;
+   grade8 = "C";
+   }else if ((o1 == 50) && (s1 == 80)) {
+   h1 = qp104;
+   grade8 = "C";
+   }else if ((o1 == 51) && (s1 == 80)) {
+   h1 = qp105;
+   grade8 = "C";
+   }else if ((o1 == 52) && (s1 == 80)) {
+   h1 = qp106;
+   grade8 = "B";
+   }else if ((o1 == 53) && (s1 == 80)) {
+   h1 = qp107;
+   grade8 = "B";
+   }else if ((o1 == 54) && (s1 == 80)) {
+   h1 = qp108;
+   grade8 = "B";
+   }else if ((o1 == 55) && (s1 == 80)) {
+   h1 = qp109;
+   grade8 = "B";
+   }else if ((o1 == 56) && (s1 == 80)) {
+   h1 = qp110;
+   grade8 = "B";
+   }else if ((o1 == 57) && (s1 == 80)) {
+   h1 = qp111;
+   grade8 = "B";
+   }else if ((o1 == 58) && (s1 == 80)) {
+   h1 = qp112;
+   grade8 = "B";
+   }else if ((o1 == 59) && (s1 == 80)) {
+   h1 = qp113;
+   grade8 = "B";
+   }else if ((o1 == 60) && (s1 == 80)) {
+   h1 = qp114;
+   grade8 = "B";
+   }else if ((o1 == 61) && (s1 == 80)) {
+   h1 = qp115;
+   grade8 = "B";
+   }else if ((o1 == 62) && (s1 == 80)) {
+   h1 = qp116;
+   grade8 = "B";
+   }else if ((o1 == 63) && (s1 == 80)) {
+   h1 = qp117;
+   grade8 = "B";
+   }else if ((o1 >= 64) && (o1 <= 80) && (s1 == 80)) {
+   h1 = qp118;
+   grade8 = "A";
+   }else if ((o1 == 40) && (s1 == 100)){
+   h1 = qp120;
+   grade8 = "D";
+   }else if ((o1 == 41) && (s1 == 100)){
+   h1 = qp121;
+   grade8 = "D";
+   }else if ((o1 == 42) && (s1 == 100)){
+   h1 = qp122;
+   grade8 = "D";
+   }else if ((o1 == 43) && (s1 == 100)){
+   h1 = qp123;
+   grade8 = "D";
+   }else if ((o1 == 44) && (s1 == 100)){
+   h1 = qp124;
+   grade8 = "D";
+   }else if ((o1 == 45) && (s1 == 100)){
+   h1 = qp125;
+   grade8 = "D";
+   }else if ((o1 == 46) && (s1 == 100)){
+   h1 = qp126;
+   grade8 = "D";
+   }else if ((o1 == 47) && (s1 == 100)){
+   h1 = qp127;
+   grade8 = "D";
+   }else if ((o1 == 48) && (s1 == 100)){
+   h1 = qp128;
+   grade8 = "D";
+   }else if ((o1 == 49) && (s1 == 100)){
+   h1 = qp129;
+   grade8 = "D";
+   }else if ((o1 == 50) && (s1 == 100)){
+   h1 = qp130;
+   grade8 = "C";
+   }else if ((o1 == 51) && (s1 == 100)){
+   h1 = qp131;
+   grade8 = "C";
+   }else if ((o1 == 52) && (s1 == 100)){
+   h1 = qp132;
+   grade8 = "C";
+   }else if ((o1 == 53) && (s1 == 100)){
+   h1 = qp133;
+   grade8 = "C";
+   }else if ((o1 == 54) && (s1 == 100)){
+   h1 = qp134;
+   grade8 = "C";
+   }else if ((o1 == 55) && (s1 == 100)){
+   h1 = qp135;
+   grade8 = "C";
+   }else if ((o1 == 56) && (s1 == 100)){
+   h1 = qp136;
+   grade8 = "C";
+   }else if ((o1 == 57) && (s1 == 100)){
+   h1 = qp137;
+   grade8 = "C";
+   }else if ((o1 == 58) && (s1 == 100)){
+   h1 = qp138;
+   grade8 = "C";
+   }else if ((o1 == 59) && (s1 == 100)){
+   h1 = qp139;
+   grade8 = "C";
+   }else if ((o1 == 60) && (s1 == 100)){
+   h1 = qp140;
+   grade8 = "C";
+   }else if ((o1 == 61) && (s1 == 100)){
+   h1 = qp141;
+   grade8 = "C";
+   }else if ((o1 == 62) && (s1 == 100)){
+   h1 = qp142;
+   grade8 = "C";
+   }else if ((o1 == 63) && (s1 == 100)){
+   h1 = qp143;
+   grade8 = "C";
+   }else if ((o1 == 64) && (s1 == 100)){
+   h1 = qp144;
+   grade8 = "C";
+   }else if ((o1 == 65) && (s1 == 100)){
+   h1 = qp145;
+   grade8 = "B";
+   }else if ((o1 == 66) && (s1 == 100)){
+   h1 = qp146;
+   grade8 = "B";
+   }else if ((o1 == 67) && (s1 == 100)){
+   h1 = qp147;
+   grade8 = "B";
+   }else if ((o1 == 68) && (s1 == 100)){
+   h1 = qp148;
+   grade8 = "B";
+   }else if ((o1 == 69) && (s1 == 100)){
+   h1 = qp149;
+   grade8 = "B";
+   }else if ((o1 == 70) && (s1 == 100)){
+   h1 = qp150;
+   grade8 = "B";
+   }else if ((o1 == 71) && (s1 == 100)){
+   h1 = qp151;
+   grade8 = "B";
+   }else if ((o1 == 72) && (s1 == 100)){
+   h1 = qp152;
+   grade8 = "B";
+   }else if ((o1 == 73) && (s1 == 100)){
+   h1 = qp153;
+   grade8 = "B";
+   }else if ((o1 == 74) && (s1 == 100)){
+   h1 = qp154;
+   grade8 = "B";
+   }else if ((o1 == 75) && (s1 == 100)){
+   h1 = qp155;
+   grade8 = "B";
+   }else if ((o1 == 76) && (s1 == 100)){
+   h1 = qp156;
+   grade8 = "B";
+   }else if ((o1 == 77) && (s1 == 100)){
+   h1 = qp157;
+   grade8 = "B";
+   }else if ((o1 == 78) && (s1 == 100)){
+   h1 = qp158;
+   grade8 = "B";
+   }else if ((o1 == 79) && (s1 == 100)){
+   h1 = qp159;
+   grade8 = "B";
+   }else if ((o1 >= 80) && (o1 <= 100) && (s1 == 100)){
+   h1 = qp160;
+   grade8 = "A";
+   }else {
+   h1 = qp20;
+   grade8 = "NaN";
+   }
+
+
+      if ((p1 == 24) && (t1 == 60)) {
+         i1 = qp61;
+         grade9 = "D";
+   }else if ((p1 == 25) && (t1 == 60)) {
+      i1 = qp62;
+      grade9 = "D";
+   }else if ((p1 == 26) && (t1 == 60)) {
+      i1 = qp63;
+      grade9 = "D";
+   }else if ((p1 == 27) && (t1 == 60)) {
+      i1 = qp64;
+      grade9 = "D";
+   }else if ((p1 == 28) && (t1 == 60)) {
+      i1 = qp65;
+      grade9 = "D";
+   }else if ((p1 == 29) && (t1 == 60)) {
+      i1 = qp66;
+      grade9 = "D";
+   }else if ((p1 == 30) && (t1 == 60)) {
+      i1 = qp67;
+      grade9 = "C";
+   }else if ((p1 == 31) && (t1 == 60)) {
+      i1 = qp68;
+      grade9 = "C";
+   }else if ((p1 == 32) && (t1 == 60)) {
+      i1 = qp69;
+      grade9 = "C";
+   }else if ((p1 == 33) && (t1 == 60)) {
+      i1 = qp70;
+      grade9 = "C";
+   }else if ((p1 == 34) && (t1 == 60)) {
+      i1 = qp71;
+      grade9 = "C";
+   }else if ((p1 == 35) && (t1 == 60)) {
+      i1 = qp72;
+      grade9 = "C";
+   }else if ((p1 == 36) && (t1 == 60)) {
+      i1 = qp73;
+      grade9 = "C";
+   }else if ((p1 == 37) && (t1 == 60)) {
+      i1 = qp74;
+      grade9 = "C";
+   }else if ((p1 == 38) && (t1 == 60)) {
+      i1 = qp75;
+      grade9 = "C";
+   }else if ((p1 == 39) && (t1 == 60)) {
+      i1 = qp76;
+      grade9 = "B";
+   }else if ((p1 == 40) && (t1 == 60)) {
+      i1 = qp77;
+      grade9 = "B";
+   }else if ((p1 == 41) && (t1 == 60)) {
+      i1 = qp78;
+      grade9 = "B";
+   }else if ((p1 == 42) && (t1 == 60)) {
+      i1 = qp79;
+      grade9 = "B";
+   }else if ((p1 == 43) && (t1 == 60)) {
+      i1 = qp80;
+      grade9 = "B";
+   }else if ((p1 == 44) && (t1 == 60)) {
+      i1 = qp81;
+      grade9 = "B";
+   }else if ((p1 == 45) && (t1 == 60)) {
+      i1 = qp82;
+      grade9 = "B";
+   }else if ((p1 == 46) && (t1 == 60)) {
+      i1 = qp83;
+      grade9 = "B";
+   }else if ((p1 == 47) && (t1 == 60)) {
+      i1 = qp84;
+      grade9 = "B";
+   }else if ((p1 >= 48) && (p1 <= 60) && (t1 == 60)) {
+      i1 = qp85;
+      grade9 = "A";
+   }else if ((p1 == 8) && (t1 == 20)) {
+      i1 = qp21;
+      grade9 = "D";
+   }else if ((p1 == 9) && (t1 == 20)) {
+      i1 = qp22;
+      grade9 = "D";
+   }else if ((p1 == 10) && (t1 == 20)) {
+      i1 = qp23;
+      grade9 = "C";
+   }else if ((p1 == 11) && (t1 == 20)) {
+      i1 = qp24;
+      grade9 = "C";
+   }else if ((p1 == 12) && (t1 == 20)) {
+      i1 = qp25;
+      grade9 = "C";
+   }else if ((p1 == 13) && (t1 == 20)) {
+      i1 = qp26;
+      grade9 = "B";
+   }else if ((p1 == 14) && (t1 == 20)) {
+      i1 = qp27;
+      grade9 = "B";
+   }else if ((p1 == 15) && (t1 == 20)) {
+      i1 = qp28;
+      grade9 = "B";
+   }else if ((p1 >= 16) && (p1 <= 20) && (t1 == 20)) {
+      i1 = qp29;
+      grade9 = "A";
+   }else if ((p1 == 16) && (t1 == 40)) {
+      i1 = qp41;
+      grade9 = "D";
+   }else if ((p1 == 17) && (t1 == 40)) {
+      i1 = qp42;
+      grade9 = "D";
+   }else if ((p1 == 18) && (t1 == 40)) {
+      i1 = qp43;
+      grade9 = "D";
+   }else if ((p1 == 19) && (t1 == 40)) {
+      i1 = qp44;
+      grade9 = "D";
+   }else if ((p1 == 20) && (t1 == 40)) {
+      i1 = qp45;
+      grade9 = "C";
+   }else if ((p1 == 21) && (t1 == 40)) {
+      i1 = qp46;
+      grade9 = "C";
+   }else if ((p1 == 22) && (t1 == 40)) {
+      i1 = qp47;
+      grade9 = "C";
+   }else if ((p1 == 23) && (t1 == 40)) {
+      i1 = qp48;
+      grade9 = "C";
+   }else if ((p1 == 24) && (t1 == 40)) {
+      i1 = qp49;
+      grade9 = "C";
+   }else if ((p1 == 25) && (t1 == 40)) {
+      i1 = qp50;
+      grade9 = "C";
+   }else if ((p1 == 26) && (t1 == 40)) {
+      i1 = qp51;
+      grade9 = "B";
+   }else if ((p1 == 27) && (t1 == 40)) {
+      i1 = qp52;
+      grade9 = "B";
+   }else if ((p1 == 28) && (t1 == 40)) {
+      i1 = qp53;
+      grade9 = "B";
+   }else if ((p1 == 29) && (t1 == 40)) {
+      i1 = qp54;
+      grade9 = "B";
+   }else if ((p1 == 30) && (t1 == 40)) {
+      i1 = qp55;
+      grade9 = "B";
+   }else if ((p1 == 31) && (t1 == 40)) {
+      i1 = qp56;
+      grade9 = "B";
+   }else if ((p1 >= 32) && (p1 <= 40) && (t1 == 40)){
+      i1 = qp57;
+      grade9 = "A";
+   }else if ((p1 == 32) && (t1 == 80)) {
+      i1 = qp86;
+      grade9 = "D";
+   }else if ((p1 == 33) && (t1 == 80)) {
+      i1 = qp87;
+      grade9 = "D";
+   }else if ((p1 == 34) && (t1 == 80)) {
+      i1 = qp88;
+      grade9 = "D";
+   }else if ((p1 == 35) && (t1 == 80)) {
+      i1 = qp89;
+      grade9 = "D";
+   }else if ((p1 == 36) && (t1 == 80)) {
+      i1 = qp90;
+      grade9 = "D";
+   }else if ((p1 == 37) && (t1 == 80)) {
+      i1 = qp91;
+      grade9 = "D";
+   }else if ((p1 == 38) && (t1 == 80)) {
+      i1 = qp92;
+      grade9 = "D";
+   }else if ((p1 == 39) && (t1 == 80)) {
+      i1 = qp93;
+      grade9 = "D";
+   }else if ((p1 == 40) && (t1 == 80)) {
+      i1 = qp94;
+      grade9 = "C";
+   }else if ((p1 == 41) && (t1 == 80)) {
+      i1 = qp95;
+      grade9 = "C";
+   }else if ((p1 == 42) && (t1 == 80)) {
+      i1 = qp96;
+      grade9 = "C";
+   }else if ((p1 == 43) && (t1 == 80)) {
+      i1 = qp97;
+      grade9 = "C";
+   }else if ((p1 == 44) && (t1 == 80)) {
+      i1 = qp98;
+      grade9 = "C";
+   }else if ((p1 == 45) && (t1 == 80)) {
+      i1 = qp99;
+      grade9 = "C";
+   }else if ((p1 == 46) && (t1 == 80)) {
+      i1 = qp100;
+      grade9 = "C";
+   }else if ((p1 == 47) && (t1 == 80)) {
+      i1 = qp101;
+      grade9 = "C";
+   }else if ((p1 == 48) && (t1 == 80)) {
+      i1 = qp102;
+      grade9 = "C";
+   }else if ((p1 == 49) && (t1 == 80)) {
+      i1 = qp103;
+      grade9 = "C";
+   }else if ((p1 == 50) && (t1 == 80)) {
+      i1 = qp104;
+      grade9 = "C";
+   }else if ((p1 == 51) && (t1 == 80)) {
+      i1 = qp105;
+      grade9 = "C";
+   }else if ((p1 == 52) && (t1 == 80)) {
+      i1 = qp106;
+      grade9 = "B";
+   }else if ((p1 == 53) && (t1 == 80)) {
+      i1 = qp107;
+      grade9 = "B";
+   }else if ((p1 == 54) && (t1 == 80)) {
+      i1 = qp108;
+      grade9 = "B";
+   }else if ((p1 == 55) && (t1 == 80)) {
+      i1 = qp109;
+      grade9 = "B";
+   }else if ((p1 == 56) && (t1 == 80)) {
+      i1 = qp110;
+      grade9 = "B";
+   }else if ((p1 == 57) && (t1 == 80)) {
+      i1 = qp111;
+      grade9 = "B";
+   }else if ((p1 == 58) && (t1 == 80)) {
+      i1 = qp112;
+      grade9 = "B";
+   }else if ((p1 == 59) && (t1 == 80)) {
+      i1 = qp113;
+      grade9 = "B";
+   }else if ((p1 == 60) && (t1 == 80)) {
+      i1 = qp114;
+      grade9 = "B";
+   }else if ((p1 == 61) && (t1 == 80)) {
+      i1 = qp115;
+      grade9 = "B";
+   }else if ((p1 == 62) && (t1 == 80)) {
+      i1 = qp116;
+      grade9 = "B";
+   }else if ((p1 == 63) && (t1 == 80)) {
+      i1 = qp117;
+      grade9 = "B";
+   }else if ((p1 >= 64) && (p1 <= 80) && (t1 == 80)) {
+      i1 = qp118;
+      grade9 = "A";
+   }else if ((p1 == 40) && (t1 == 100)){
+      i1 = qp120;
+      grade9 = "D";
+   }else if ((p1 == 41) && (t1 == 100)){
+      i1 = qp121;
+      grade9 = "D";
+   }else if ((p1 == 42) && (t1 == 100)){
+      i1 = qp122;
+      grade9 = "D";
+   }else if ((p1 == 43) && (t1 == 100)){
+      i1 = qp123;
+      grade9 = "D";
+   }else if ((p1 == 44) && (t1 == 100)){
+      i1 = qp124;
+      grade9 = "D";
+   }else if ((p1 == 45) && (t1 == 100)){
+      i1 = qp125;
+      grade9 = "D";
+   }else if ((p1 == 46) && (t1 == 100)){
+      i1 = qp126;
+      grade9 = "D";
+   }else if ((p1 == 47) && (t1 == 100)){
+      i1 = qp127;
+      grade9 = "D";
+   }else if ((p1 == 48) && (t1 == 100)){
+      i1 = qp128;
+      grade9 = "D";
+   }else if ((p1 == 49) && (t1 == 100)){
+      i1 = qp129;
+      grade9 = "D";
+   }else if ((p1 == 50) && (t1 == 100)){
+      i1 = qp130;
+      grade9 = "C";
+   }else if ((p1 == 51) && (t1 == 100)){
+      i1 = qp131;
+      grade9 = "C";
+   }else if ((p1 == 52) && (t1 == 100)){
+      i1 = qp132;
+      grade9 = "C";
+   }else if ((p1 == 53) && (t1 == 100)){
+      i1 = qp133;
+      grade9 = "C";
+   }else if ((p1 == 54) && (t1 == 100)){
+      i1 = qp134;
+      grade9 = "C";
+   }else if ((p1 == 55) && (t1 == 100)){
+      i1 = qp135;
+      grade9 = "C";
+   }else if ((p1 == 56) && (t1 == 100)){
+      i1 = qp136;
+      grade9 = "C";
+   }else if ((p1 == 57) && (t1 == 100)){
+      i1 = qp137;
+      grade9 = "C";
+   }else if ((p1 == 58) && (t1 == 100)){
+      i1 = qp138;
+      grade9 = "C";
+   }else if ((p1 == 59) && (t1 == 100)){
+      i1 = qp139;
+      grade9 = "C";
+   }else if ((p1 == 60) && (t1 == 100)){
+      i1 = qp140;
+      grade9 = "C";
+   }else if ((p1 == 61) && (t1 == 100)){
+      i1 = qp141;
+      grade9 = "C";
+   }else if ((p1 == 62) && (t1 == 100)){
+      i1 = qp142;
+      grade9 = "C";
+   }else if ((p1 == 63) && (t1 == 100)){
+      i1 = qp143;
+      grade9 = "C";
+   }else if ((p1 == 64) && (t1 == 100)){
+      i1 = qp144;
+      grade9 = "C";
+   }else if ((p1 == 65) && (t1 == 100)){
+      i1 = qp145;
+      grade9 = "B";
+   }else if ((p1 == 66) && (t1 == 100)){
+      i1 = qp146;
+      grade9 = "B";
+   }else if ((p1 == 67) && (t1 == 100)){
+      i1 = qp147;
+      grade9 = "B";
+   }else if ((p1 == 68) && (t1 == 100)){
+      i1 = qp148;
+      grade9 = "B";
+   }else if ((p1 == 69) && (t1 == 100)){
+      i1 = qp149;
+      grade9 = "B";
+   }else if ((p1 == 70) && (t1 == 100)){
+      i1 = qp150;
+      grade9 = "B";
+   }else if ((p1 == 71) && (t1 == 100)){
+      i1 = qp151;
+      grade9 = "B";
+   }else if ((p1 == 72) && (t1 == 100)){
+      i1 = qp152;
+      grade9 = "B";
+   }else if ((p1 == 73) && (t1 == 100)){
+      i1 = qp153;
+      grade9 = "B";
+   }else if ((p1 == 74) && (t1 == 100)){
+      i1 = qp154;
+      grade9 = "B";
+   }else if ((p1 == 75) && (t1 == 100)){
+      i1 = qp155;
+      grade9 = "B";
+   }else if ((p1 == 76) && (t1 == 100)){
+      i1 = qp156;
+      grade9 = "B";
+   }else if ((p1 == 77) && (t1 == 100)){
+      i1 = qp157;
+      grade9 = "B";
+   }else if ((p1 == 78) && (t1 == 100)){
+      i1 = qp158;
+      grade9 = "B";
+   }else if ((p1 == 79) && (t1 == 100)){
+      i1 = qp159;
+      grade9 = "B";
+   }else if ((p1 >= 80) && (p1 <= 100) && (t1 == 100)){
+      i1 = qp160;
+      grade9 = "A";
+   }else {
+      i1 = qp20;
+      grade9 = "NaN";
+   }
+
+      if ((q1 == 24) && (u1 == 60)) {
+         j1 = qp61;
+         grade10 = "D";
+   }else if ((q1 == 25) && (u1 == 60)) {
+      j1 = qp62;
+      grade10 = "D";
+   }else if ((q1 == 26) && (u1 == 60)) {
+      j1 = qp63;
+      grade10 = "D";
+   }else if ((q1 == 27) && (u1 == 60)) {
+      j1 = qp64;
+      grade10 = "D";
+   }else if ((q1 == 28) && (u1 == 60)) {
+      j1 = qp65;
+      grade10 = "D";
+   }else if ((q1 == 29) && (u1 == 60)) {
+      j1 = qp66;
+      grade10 = "D";
+   }else if ((q1 == 30) && (u1 == 60)) {
+      j1 = qp67;
+      grade10 = "C";
+   }else if ((q1 == 31) && (u1 == 60)) {
+      j1 = qp68;
+      grade10 = "C";
+   }else if ((q1 == 32) && (u1 == 60)) {
+      j1 = qp69;
+      grade10 = "C";
+   }else if ((q1 == 33) && (u1 == 60)) {
+      j1 = qp70;
+      grade10 = "C";
+   }else if ((q1 == 34) && (u1 == 60)) {
+      j1 = qp71;
+      grade10 = "C";
+   }else if ((q1 == 35) && (u1 == 60)) {
+      j1 = qp72;
+      grade10 = "C";
+   }else if ((q1 == 36) && (u1 == 60)) {
+      j1 = qp73;
+      grade10 = "C";
+   }else if ((q1 == 37) && (u1 == 60)) {
+      j1 = qp74;
+      grade10 = "C";
+   }else if ((q1 == 38) && (u1 == 60)) {
+      j1 = qp75;
+      grade10 = "C";
+   }else if ((q1 == 39) && (u1 == 60)) {
+      j1 = qp76;
+      grade10 = "B";
+   }else if ((q1 == 40) && (u1 == 60)) {
+      j1 = qp77;
+      grade10 = "B";
+   }else if ((q1 == 41) && (u1 == 60)) {
+      j1 = qp78;
+      grade10 = "B";
+   }else if ((q1 == 42) && (u1 == 60)) {
+      j1 = qp79;
+      grade10 = "B";
+   }else if ((q1 == 43) && (u1 == 60)) {
+      j1 = qp80;
+      grade10 = "B";
+   }else if ((q1 == 44) && (u1 == 60)) {
+      j1 = qp81;
+      grade10 = "B";
+   }else if ((q1 == 45) && (u1 == 60)) {
+      j1 = qp82;
+      grade10 = "B";
+   }else if ((q1 == 46) && (u1 == 60)) {
+      j1 = qp83;
+      grade10 = "B";
+   }else if ((q1 == 47) && (u1 == 60)) {
+      j1 = qp84;
+      grade10 = "B";
+   }else if ((q1 >= 48) && (q1 <= 60) && (u1 == 60)) {
+      j1 = qp85;
+      grade10 = "A";
+   }else if ((q1 == 8) && (u1 == 20)) {
+      j1 = qp21;
+      grade10 = "D";
+   }else if ((q1 == 9) && (u1 == 20)) {
+      j1 = qp22;
+      grade10 = "D";
+   }else if ((q1 == 10) && (u1 == 20)) {
+      j1 = qp23;
+      grade10 = "C";
+   }else if ((q1 == 11) && (u1 == 20)) {
+      j1 = qp24;
+      grade10 = "C";
+   }else if ((q1 == 12) && (u1 == 20)) {
+      j1 = qp25;
+      grade10 = "C";
+   }else if ((q1 == 13) && (u1 == 20)) {
+      j1 = qp26;
+      grade10 = "B";
+   }else if ((q1 == 14) && (u1 == 20)) {
+      j1 = qp27;
+      grade10 = "B";
+   }else if ((q1 == 15) && (u1 == 20)) {
+      j1 = qp28;
+      grade10 = "B";
+   }else if ((q1 >= 16) && (q1 <= 20) && (u1 == 20)) {
+      j1 = qp29;
+      grade10 = "A";
+   }else if ((q1 == 16) && (u1 == 40)) {
+      j1 = qp41;
+      grade10 = "D";
+   }else if ((q1 == 17) && (u1 == 40)) {
+      j1 = qp42;
+      grade10 = "D";
+   }else if ((q1 == 18) && (u1 == 40)) {
+      j1 = qp43;
+      grade10 = "D";
+   }else if ((q1 == 19) && (u1 == 40)) {
+      j1 = qp44;
+      grade10 = "D";
+   }else if ((q1 == 20) && (u1 == 40)) {
+      j1 = qp45;
+      grade10 = "C";
+   }else if ((q1 == 21) && (u1 == 40)) {
+      j1 = qp46;
+      grade10 = "C";
+   }else if ((q1 == 22) && (u1 == 40)) {
+      j1 = qp47;
+      grade10 = "C";
+   }else if ((q1 == 23) && (u1 == 40)) {
+      j1 = qp48;
+      grade10 = "C";
+   }else if ((q1 == 24) && (u1 == 40)) {
+      j1 = qp49;
+      grade10 = "C";
+   }else if ((q1 == 25) && (u1 == 40)) {
+      j1 = qp50;
+      grade10 = "C";
+   }else if ((q1 == 26) && (u1 == 40)) {
+      j1 = qp51;
+      grade10 = "B";
+   }else if ((q1 == 27) && (u1 == 40)) {
+      j1 = qp52;
+      grade10 = "B";
+   }else if ((q1 == 28) && (u1 == 40)) {
+      j1 = qp53;
+      grade10 = "B";
+   }else if ((q1 == 29) && (u1 == 40)) {
+      j1 = qp54;
+      grade10 = "B";
+   }else if ((q1 == 30) && (u1 == 40)) {
+      j1 = qp55;
+      grade10 = "B";
+   }else if ((q1 == 31) && (u1 == 40)) {
+      j1 = qp56;
+      grade10 = "B";
+   }else if ((q1 >= 32) && (q1 <= 40) && (u1 == 40)){
+      j1 = qp57;
+      grade10 = "A";
+   }else if ((q1 == 32) && (u1 == 80)) {
+      j1 = qp86;
+      grade10 = "D";
+   }else if ((q1 == 33) && (u1 == 80)) {
+      j1 = qp87;
+      grade10 = "D";
+   }else if ((q1 == 34) && (u1 == 80)) {
+      j1 = qp88;
+      grade10 = "D";
+   }else if ((q1 == 35) && (u1 == 80)) {
+      j1 = qp89;
+      grade10 = "D";
+   }else if ((q1 == 36) && (u1 == 80)) {
+      j1 = qp90;
+      grade10 = "D";
+   }else if ((q1 == 37) && (u1 == 80)) {
+      j1 = qp91;
+      grade10 = "D";
+   }else if ((q1 == 38) && (u1 == 80)) {
+      j1 = qp92;
+      grade10 = "D";
+   }else if ((q1 == 39) && (u1 == 80)) {
+      j1 = qp93;
+      grade10 = "D";
+   }else if ((q1 == 40) && (u1 == 80)) {
+      j1 = qp94;
+      grade10 = "C";
+   }else if ((q1 == 41) && (u1 == 80)) {
+      j1 = qp95;
+      grade10 = "C";
+   }else if ((q1 == 42) && (u1 == 80)) {
+      j1 = qp96;
+      grade10 = "C";
+   }else if ((q1 == 43) && (u1 == 80)) {
+      j1 = qp97;
+      grade10 = "C";
+   }else if ((q1 == 44) && (u1 == 80)) {
+      j1 = qp98;
+      grade10 = "C";
+   }else if ((q1 == 45) && (u1 == 80)) {
+      j1 = qp99;
+      grade10 = "C";
+   }else if ((q1 == 46) && (u1 == 80)) {
+      j1 = qp100;
+      grade10 = "C";
+   }else if ((q1 == 47) && (u1 == 80)) {
+      j1 = qp101;
+      grade10 = "C";
+   }else if ((q1 == 48) && (u1 == 80)) {
+      j1 = qp102;
+      grade10 = "C";
+   }else if ((q1 == 49) && (u1 == 80)) {
+      j1 = qp103;
+      grade10 = "C";
+   }else if ((q1 == 50) && (u1 == 80)) {
+      j1 = qp104;
+      grade10 = "C";
+   }else if ((q1 == 51) && (u1 == 80)) {
+      j1 = qp105;
+      grade10 = "C";
+   }else if ((q1 == 52) && (u1 == 80)) {
+      j1 = qp106;
+      grade10 = "B";
+   }else if ((q1 == 53) && (u1 == 80)) {
+      j1 = qp107;
+      grade10 = "B";
+   }else if ((q1 == 54) && (u1 == 80)) {
+      j1 = qp108;
+      grade10 = "B";
+   }else if ((q1 == 55) && (u1 == 80)) {
+      j1 = qp109;
+      grade10 = "B";
+   }else if ((q1 == 56) && (u1 == 80)) {
+      j1 = qp110;
+      grade10 = "B";
+   }else if ((q1 == 57) && (u1 == 80)) {
+      j1 = qp111;
+      grade10 = "B";
+   }else if ((q1 == 58) && (u1 == 80)) {
+      j1 = qp112;
+      grade10 = "B";
+   }else if ((q1 == 59) && (u1 == 80)) {
+      j1 = qp113;
+      grade10 = "B";
+   }else if ((q1 == 60) && (u1 == 80)) {
+      j1 = qp114;
+      grade10 = "B";
+   }else if ((q1 == 61) && (u1 == 80)) {
+      j1 = qp115;
+      grade10 = "B";
+   }else if ((q1 == 62) && (u1 == 80)) {
+      j1 = qp116;
+      grade10 = "B";
+   }else if ((q1 == 63) && (u1 == 80)) {
+      j1 = qp117;
+      grade10 = "B";
+   }else if ((q1 >= 64) && (q1 <= 80) && (u1 == 80)) {
+      j1 = qp118;
+      grade10 = "A";
+   }else if ((q1 == 40) && (u1 == 100)){
+      j1 = qp120;
+      grade10 = "D";
+   }else if ((q1 == 41) && (u1 == 100)){
+      j1 = qp121;
+      grade10 = "D";
+   }else if ((q1 == 42) && (u1 == 100)){
+      j1 = qp122;
+      grade10 = "D";
+   }else if ((q1 == 43) && (u1 == 100)){
+      j1 = qp123;
+      grade10 = "D";
+   }else if ((q1 == 44) && (u1 == 100)){
+      j1 = qp124;
+      grade10 = "D";
+   }else if ((q1 == 45) && (u1 == 100)){
+      j1 = qp125;
+      grade10 = "D";
+   }else if ((q1 == 46) && (u1 == 100)){
+      j1 = qp126;
+      grade10 = "D";
+   }else if ((q1 == 47) && (u1 == 100)){
+      j1 = qp127;
+      grade10 = "D";
+   }else if ((q1 == 48) && (u1 == 100)){
+      j1 = qp128;
+      grade10 = "D";
+   }else if ((q1 == 49) && (u1 == 100)){
+      j1 = qp129;
+      grade10 = "D";
+   }else if ((q1 == 50) && (u1 == 100)){
+      j1 = qp130;
+      grade10 = "C";
+   }else if ((q1 == 51) && (u1 == 100)){
+      j1 = qp131;
+      grade10 = "C";
+   }else if ((q1 == 52) && (u1 == 100)){
+      j1 = qp132;
+      grade10 = "C";
+   }else if ((q1 == 53) && (u1 == 100)){
+      j1 = qp133;
+      grade10 = "C";
+   }else if ((q1 == 54) && (u1 == 100)){
+      j1 = qp134;
+      grade10 = "C";
+   }else if ((q1 == 55) && (u1 == 100)){
+      j1 = qp135;
+      grade10 = "C";
+   }else if ((q1 == 56) && (u1 == 100)){
+      j1 = qp136;
+      grade10 = "C";
+   }else if ((q1 == 57) && (u1 == 100)){
+      j1 = qp137;
+      grade10 = "C";
+   }else if ((q1 == 58) && (u1 == 100)){
+      j1 = qp138;
+      grade10 = "C";
+   }else if ((q1 == 59) && (u1 == 100)){
+      j1 = qp139;
+      grade10 = "C";
+   }else if ((q1 == 60) && (u1 == 100)){
+      j1 = qp140;
+      grade10 = "C";
+   }else if ((q1 == 61) && (u1 == 100)){
+      j1 = qp141;
+      grade10 = "C";
+   }else if ((q1 == 62) && (u1 == 100)){
+      j1 = qp142;
+      grade10 = "C";
+   }else if ((q1 == 63) && (u1 == 100)){
+      j1 = qp143;
+      grade10 = "C";
+   }else if ((q1 == 64) && (u1 == 100)){
+      j1 = qp144;
+      grade10 = "C";
+   }else if ((q1 == 65) && (u1 == 100)){
+      j1 = qp145;
+      grade10 = "B";
+   }else if ((q1 == 66) && (u1 == 100)){
+      j1 = qp146;
+      grade10 = "B";
+   }else if ((q1 == 67) && (u1 == 100)){
+      j1 = qp147;
+      grade10 = "B";
+   }else if ((q1 == 68) && (u1 == 100)){
+      j1 = qp148;
+      grade10 = "B";
+   }else if ((q1 == 69) && (u1 == 100)){
+      j1 = qp149;
+      grade10 = "B";
+   }else if ((q1 == 70) && (u1 == 100)){
+      j1 = qp150;
+      grade10 = "B";
+   }else if ((q1 == 71) && (u1 == 100)){
+      j1 = qp151;
+      grade10 = "B";
+   }else if ((q1 == 72) && (u1 == 100)){
+      j1 = qp152;
+      grade10 = "B";
+   }else if ((q1 == 73) && (u1 == 100)){
+      j1 = qp153;
+      grade10 = "B";
+   }else if ((q1 == 74) && (u1 == 100)){
+      j1 = qp154;
+      grade10 = "B";
+   }else if ((q1 == 75) && (u1 == 100)){
+      j1 = qp155;
+      grade10 = "B";
+   }else if ((q1 == 76) && (u1 == 100)){
+      j1 = qp156;
+      grade10 = "B";
+   }else if ((q1 == 77) && (u1 == 100)){
+      j1 = qp157;
+      grade10 = "B";
+   }else if ((q1 == 78) && (u1 == 100)){
+      j1 = qp158;
+      grade10 = "B";
+   }else if ((q1 == 79) && (u1 == 100)){
+      j1 = qp159;
+      grade10 = "B";
+   }else if ((q1 >= 80) && (q1 <= 100) && (u1 == 100)){
+      j1 = qp160;
+      grade10 = "A";
+   }else {
+      j1 = qp20;
+      grade10 = "NaN";
+   }
+
+
    gpacontainer = document.getElementById("r");
    details = document.getElementById("detail");
    err = document.getElementById("error");
 //checking if values are equal to either 20 40 60 80 or 100.
-  if ((h == 60 || h == 80 || h == 20 || h == 40 || h == 100) && (i == 60 || i == 80 ||i == 20 || i == 40 || i == 100) && (j == 60 || j == 80 || j == 20 || j == 40 || j == 100) && (k == 60 || k == 80 || k == 20 || k == 40 || k == 100) && (l == 60 || l == 80 || l == 20 || l == 40 || l == 100) && (m == 60 || m == 80 || m == 20 || m == 40 || m == 100)){
+  if ((h == 60 || h == 80 || h == 20 || h == 40 || h == 100 || h == 0) && (i == 60 || i == 80 ||i == 20 || i == 40 || i == 100 || i == 0) && (j == 60 || j == 80 || j == 20 || j == 40 || j == 100 || j == 0) && (k == 60 || k == 80 || k == 20 || k == 40 || k == 100 || k == 0) && (l == 60 || l == 80 || l == 20 || l == 40 || l == 100 || l == 0) && (m == 60 || m == 80 || m == 20 || m == 40 || m == 100 || m == 0) && (r1 == 60 || r1 == 80 || r1 == 20 || r1 == 40 || r1 == 100 || r1 == 0) && (s1 == 60 || s1 == 80 || s1 == 20 || s1 == 40 || s1 == 100 || s1 == 0) && (t1 == 60 || t1 == 80 || t1 == 20 || t1 == 40 || t1 == 100 || t1 == 0) && (u1 == 60 || u1 == 80 || u1 == 20 || u1 == 40 || u1 == 100 || u1 == 0)){
      //checking if obtained marks are not exceeding total marks.
-         if ((a <= h) && (b <= i) && (c <= j) && (d <= k) && (e <= l) && (f <= m)){
-               totalsumob = parseFloat(a) + parseFloat(b) + parseFloat(c) + parseFloat(d) + parseFloat(e) + parseFloat(f);
-               totalsum = parseFloat(h) + parseFloat(i) + parseFloat(j) + parseFloat(k) + parseFloat(l) + parseFloat(m);
+         if ((a <= h) && (b <= i) && (c <= j) && (d <= k) && (e <= l) && (f <= m) && (n1 <= r1) && (o1 <= s1) && (p1 <= t1) && (q1 <= u1)){
+               totalsumob = parseFloat(a) + parseFloat(b) + parseFloat(c) + parseFloat(d) + parseFloat(e) + parseFloat(f) + parseFloat(n1) + parseFloat(o1) + parseFloat(p1) + parseFloat(q1);
+               totalsum = parseFloat(h) + parseFloat(i) + parseFloat(j) + parseFloat(k) + parseFloat(l) + parseFloat(m) + parseFloat(r1) + parseFloat(s1) + parseFloat(t1) + parseFloat(u1);
                //checking if the credit hours are zero
             if (g == ""){
                gpacontainer.classList.add("hidden");
                gpacontainer.classList.remove("visible");
                err.classList.add("visible");
                err.classList.remove("hidden");
-               err.textContent = "Something went wrong please check your provided values & try again.";
+               err.textContent = "Please Check your credit hours.";
                return false;
             }else if ((g >= "1") && (g >= "100")){
                gpacontainer.classList.add("visible");
                gpacontainer.classList.remove("hidden");
                err.classList.add("hidden");
                err.classList.remove("visible");
-               sum = parseFloat(a1) + parseFloat(b1) + parseFloat(c1) + parseFloat(d1) + parseFloat(e1) + parseFloat(f1);
+               sum = parseFloat(a1) + parseFloat(b1) + parseFloat(c1) + parseFloat(d1) + parseFloat(e1) + parseFloat(f1) + parseFloat(g1) + parseFloat(h1) + parseFloat(i1) + parseFloat(j1);
                raw = (sum/g);
                result = raw.toFixed(2); //reduce resultant number upto 2 decimal points.
                gpacontainer.textContent = "Your GPA is:  "+ result;
@@ -2559,7 +4131,7 @@ function GPA60(){
          gpacontainer.classList.remove("visible");
          err.classList.add("visible");
          err.classList.remove("hidden");
-         err.textContent = "Something went wrong please check your provided values & try again.";
+         err.textContent = "Please check your obtained marks.";
          return false;
       }
   }else {
@@ -2567,7 +4139,7 @@ function GPA60(){
       gpacontainer.classList.remove("visible");
       err.classList.add("visible");
       err.classList.remove("hidden");
-      err.textContent = "Something went wrong please check your provided values & try again.";
+      err.textContent = "Please check your total marks.";
   return false;
   }
 
@@ -2585,7 +4157,6 @@ function GPA60(){
 
   
 return false;
-
 }
 function table(){
 
@@ -2626,6 +4197,30 @@ function table(){
    }else{
      per6f = per6.toFixed(2);
    }
+   per7 = ((n1/r1)*100);
+   if ((n1 == 0) || (r1 == 0)){
+     per7f = 0;
+   }else{
+     per7f = per7.toFixed(2);
+   }
+   per8 = ((o1/s1)*100);
+   if ((o1 == 0) || (s1 == 0)){
+     per8f = 0;
+   }else{
+     per8f = per8.toFixed(2);
+   }
+   per9 = ((p1/t1)*100);
+   if ((p1 == 0) || (t1 == 0)){
+     per9f = 0;
+   }else{
+     per9f = per9.toFixed(2);
+   }
+   per10 = ((q1/u1)*100);
+   if ((q1 == 0) || (u1 == 0)){
+     per10f = 0;
+   }else{
+     per10f = per10.toFixed(2);
+   }
    per = ((totalsumob/totalsum)*100);
    perf = per.toFixed(2) + " % ";
 
@@ -2638,6 +4233,10 @@ function table(){
   cell4quapo.textContent = d1;
   cell5quapo.textContent = e1;
   cell6quapo.textContent = f1;
+  cell7quapo.textContent = g1;
+  cell8quapo.textContent = h1;
+  cell9quapo.textContent = i1;
+  cell10quapo.textContent = j1;
   celltquapo.textContent = sum;
   cell1OM.textContent = a;
   cell2OM.textContent = b;
@@ -2645,6 +4244,10 @@ function table(){
   cell4OM.textContent = d;
   cell5OM.textContent = e;
   cell6OM.textContent = f;
+  cell7OM.textContent = n1;
+  cell8OM.textContent = o1;
+  cell9OM.textContent = p1;
+  cell10OM.textContent = q1;
   celltOM.textContent = totalsumob;
   cell1gr.textContent = grade1;
   cell2gr.textContent = grade2;
@@ -2652,13 +4255,21 @@ function table(){
   cell4gr.textContent = grade4;
   cell5gr.textContent = grade5;
   cell6gr.textContent = grade6;
+  cell7gr.textContent = grade7;
+  cell8gr.textContent = grade8;
+  cell9gr.textContent = grade9;
+  cell10gr.textContent = grade10;
   cell1pr.textContent = per1f;
   cell2pr.textContent = per2f;
   cell3pr.textContent = per3f;
   cell4pr.textContent = per4f;
   cell5pr.textContent = per5f;
   cell6pr.textContent = per6f;
-  celltpr.textContent = perf;
+  cell7pr.textContent = per7f;
+  cell8pr.textContent = per8f;
+  cell9pr.textContent = per9f;
+  cell10pr.textContent = per10f;
+  // celltpr.textContent = perf;
 
   //show details table
   details = document.getElementById("detail");
@@ -2673,6 +4284,9 @@ function table(){
   }
 
 }
+
+
+
 
 
 
